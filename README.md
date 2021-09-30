@@ -30,3 +30,6 @@ stringr package >= 1.4.0
 ### For Python programs:
 Python 3
 
+## Contact
+Daniel Schaffer (dschaffe@andrew.cmu.edu)
+
