@@ -40,7 +40,7 @@ evaluationScriptsRERconverge: scripts for preparing data for and running RERconv
 
 evaluationScriptsCortexLiverModels: scripts for evaluating and making predictions with motor cortex and liver models
 
-evaluationScriptsPVModels: scripts for evaluationg and making predictions with PV models
+evaluationScriptsPVModels: scripts for evaluating and making predictions with PV models
 
 evaluationScriptsRetinaModels: scripts for evaluating and making predictions with retina models
 
