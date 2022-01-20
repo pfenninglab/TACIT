@@ -34,7 +34,7 @@ stringr package >= 1.4.0
 ### For Python programs:
 Python 3
 
-## Scripts for generating figures in Kaplow, Lawler, Schaffer, _et al_.__:
+## Scripts for generating figures in Kaplow, Lawler, Schaffer, _et al_.:
 
 evaluationScriptsRERconverge: scripts for preparing data for and running RERconverge
 evaluationScriptsCortexLiverModels: scripts for evaluating and making predictions with motor cortex and liver models
@@ -49,6 +49,7 @@ Irene Kaplow (ikaplow@cs.cmu.edu)
 Alyssa Lawler (alawler@andrew.cmu.edu)
 Chaitanya Srinivasan (csriniv1@andrew.cmu.edu)
 Morgan Wirthlin (mwirthlin@cmu.edu)
+Wynn Meyer (wym219@lehigh.edu)
 Andreas Pfenning (apfenning@cmu.edu)
 
 ## References
