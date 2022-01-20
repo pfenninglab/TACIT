@@ -34,9 +34,21 @@ stringr package >= 1.4.0
 ### For Python programs:
 Python 3
 
+## Scripts for generating figures in Kaplow, Lawler, Schaffer, _et al_.__:
+
+evaluationScriptsRERconverge: scripts for preparing data for and running RERconverge
+evaluationScriptsCortexLiverModels: scripts for evaluating and making predictions with motor cortex and liver models
+evaluationScriptsPVModels: scripts for evaluationg and making predictions with PV models
+evaluationScriptsRetinaModels: scripts for evaluating and making predictions with retina models
+evaluationScriptsEnhancerPhenotypeAssociations: scripts for evaluating and analyzing open chromatin region-phenotype associations
+Dependencies specific to those scripts are listed in the individual directories.  Models can be found at http://daphne.compbio.cs.cmu.edu/files/ikaplow/TACITSupplement/.
+
 ## Contact
 Daniel Schaffer (dschaffe@andrew.cmu.edu)
-
+Irene Kaplow (ikaplow@cs.cmu.edu)
+Alyssa Lawler (alawler@andrew.cmu.edu)
+Chaitanya Srinivasan (csriniv1@andrew.cmu.edu)
+Morgan Wirthlin (mwirthlin@cmu.edu)
 Andreas Pfenning (apfenning@cmu.edu)
 
 ## References
