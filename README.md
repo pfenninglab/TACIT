@@ -3,7 +3,7 @@ Enhancer-Phenotype Association from Tissue-Aware Conservation Inference Toolkit.
 
 We used this with open chromatin regions (OCRs) / predictions of open chromatin status, but the pipeline is also amenable to predictions of other proxies for enhancer activity. 
 
-This pipeline has been tested on Centos versions 7 and 8. However, we expect it to work on other distributions of Linux, MacOS, and even Windows.
+This pipeline has been tested on Centos versions 7 and 8. However, we expect it to work on other distributions of Linux, MacOS, and Windows.
 
 ## Programs for OCR-Phenotype association with phylo(g)lm:
 `ocr_phylolm.r`:    Performs OCR-phenotype assosiations for continuous traits, using phylolm, possibly with permulations. See the header comment of this program for usage details.
