@@ -1,1 +1,6 @@
-R 4.0.3
+R packages:
+viridis
+s2dverification
+
+Python packages:
+scipy
