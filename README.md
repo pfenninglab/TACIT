@@ -46,6 +46,8 @@ evaluationScriptsRetinaModels: scripts for evaluating and making predictions wit
 
 evaluationScriptsEnhancerPhenotypeAssociations: scripts for evaluating and analyzing open chromatin region-phenotype associations
 
+evaluationScriptsHiC: scripts for evaluating long-range interactions between phenotype-associated open chromatin regions and phenotype-relevant genes
+
 Dependencies specific to those scripts are listed in the individual directories.  Models can be found at http://daphne.compbio.cs.cmu.edu/files/ikaplow/TACITSupplement/.
 
 ## Contact
