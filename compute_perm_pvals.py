@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-#Script to compute permulation p-values from ocr_phylo(g)lm.r results
-#Takes three reuqired positional arguments in order:
+#Script to compute permulation p-values from ocr_phylo(g)lm.r results using a one-sided test
+#Takes three required positional arguments in order:
 #   The result CSV file of ocr_phylo(g)lm.r run once without permulations for every OCR,
 #   A folder containing results file(s) of ocr_phylo(g)lm run with permulations on
 #       a subset of the OCRs in the first file
