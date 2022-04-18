@@ -30,7 +30,9 @@ Here is the workflow we used for computing DipC p-values, including the scripts 
 python concatenate_cell_contats.py cell_contacts/ > concatenated_contats.txt
 
 #Reorder and remove header:
-tail -n +26 concatenated_contats.txt | awk 'BEGIN {FS="\t"; OFS="\t"} {2,  $3, $6, $4, $5, $7}' > concatenated_contats_reordered.txt 
+#This reordering is for the particular dataset we used. In general, the final order of columns should be:
+# readID chr1 pos1  strand1  chr2  pos2  strand2   ...
+tail -n +26 concatenated_contats.txt | awk 'BEGIN {FS="\t"; OFS="\t"} {$1, $2, $3, $6, $4, $5, $7}' > concatenated_contats_reordered.txt 
 
 #Count contacts for pairs of 10kb bins
 bash fithic_utils/validPairs2FitHiC-fixedSize.sh 10000 example concatenated_contats_reordered.txt fithic_input/
