@@ -27,5 +27,3 @@ near or not near OCRS. It takes three positional command-line arguments:
 The program writes output as described, and additionally reports the result of a Wilcoxon rank-sum test between the set of p-values
 associated with genes near OCRs of interest and the set of p-values associated with all other genes that occur in input file 3. 
 OCRs of interest are those that appear in column 4 of input file 1.
-
-compute_perm_pvals_kulinskaya.py is an alternate version of compute_perm_pvals.py (main directory) that, instead of using a pure one-sided test, used the method of Kulinskaya, 2008 (https://arxiv.org/abs/0810.2124), in which permulations in the opposite direction are rejected. It otherwise behaves the same as compute_perm_pvals.py, except that this script allows for multiple input directories (preceded by a count). 

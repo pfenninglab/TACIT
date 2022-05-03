@@ -1,1 +1,18 @@
 python 2.7.17
+numpy 1.16.6
+pybedtools 0.8.1
+Biopython 1.74
+cython 0.29.14
+scipy 1.2.1
+keras 1.2.2
+scikit-learn 0.20.3
+matplotlib 2.2.3
+OCROrthologPrediction (https://github.com/pfenninglab/OCROrthologPrediction)
+bedtools 2.29.2
+liftOver (http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/liftOver)
+HAL Format API (https://github.com/ComparativeGenomicsToolkit/hal)
+HALPER (https://github.com/pfenninglab/halLiftover-postprocessing)
+MATLAB R2021b
+R >= 4.0
+ape R pacakge
+stringr R package
