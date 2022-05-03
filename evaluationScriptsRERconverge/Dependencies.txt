@@ -1,1 +1,6 @@
-R [ADD VERSION]
+python 3.7.6
+OCROrthologPrediction (https://github.com/pfenninglab/OCROrthologPrediction)
+pyfastx 0.8.4
+prank 170427
+R 4.0.3
+RERconverge 0.1.0
