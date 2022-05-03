@@ -1,1 +1,4 @@
 python 2.7.17
+R >= 4.0
+ape R pacakge
+stringr R package
