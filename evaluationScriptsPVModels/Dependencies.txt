@@ -1,1 +1,2 @@
-python [ADD VERSION]
+R 3.6.0
+ArchR 1.0.1
