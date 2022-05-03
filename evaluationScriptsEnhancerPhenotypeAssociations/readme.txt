@@ -27,3 +27,11 @@ near or not near OCRS. It takes three positional command-line arguments:
 The program writes output as described, and additionally reports the result of a Wilcoxon rank-sum test between the set of p-values
 associated with genes near OCRs of interest and the set of p-values associated with all other genes that occur in input file 3. 
 OCRs of interest are those that appear in column 4 of input file 1.
+
+makePGLSSbatch.py is a Python 3 script for creating a submission script for running ocr_phylolm.r or ocr_phyloglm.r on a cluster.
+
+runPGLSPSCFilt.sh is a shell script that was used to associate binary phenotypes with OCR ortholog open chromatin predictions.
+
+correctSolitaryResults.r is an R script that does Benjamini-Hochberg correction for solitary and group living associations.
+
+correctVocalLearningResults.r is an R script that does Benjamini-Hochberg correction for vocal learning associations.
