@@ -1,6 +1,8 @@
-R packages:
+R packages (R >= 3.6.0):
 viridis
 s2dverification
 
-Python packages:
+Python packages (python 3):
 scipy
+
+OCROrthologPrediction (https://github.com/pfenninglab/OCROrthologPrediction)
