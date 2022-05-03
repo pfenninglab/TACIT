@@ -1,0 +1,11 @@
+# Requires >= 64Gb
+library("RERconverge")
+ZoonomiaTree = read.tree("/ocean/projects/bio200034p/ikaplow/PredictionsToPhenotypes/Zoonomia_ChrX_lessGC40_241species_30Consensus.tree")
+trees = readTrees("/ocean/projects/bio200034p/ikaplow/PredictionsToPhenotypes/BrainSizeForPRANK/brainSizePhangornFull_sorted.tree.txt", masterTree=ZoonomiaTree, max.read = 98912)
+brainSizeTable = read.table("/ocean/projects/bio200034p/ikaplow/PredictionsToPhenotypes/brain_size.txt")
+motorCortexRER = getAllResiduals(trees, useSpecies=brainSizeTable[,1], transform = "sqrt", weighted = T, scale = T)
+saveRDS(motorCortexRER, file="/ocean/projects/bio200034p/ikaplow/PredictionsToPhenotypes/BrainSizeForPRANK/motorCortexRER.rds")
+brainSizeTrait <- setNames(brainSizeTable[[2]], brainSizeTable[[1]])
+charpaths=char2Paths(brainSizeTrait, trees)
+brainSizeRes=correlateWithContinuousPhenotype(motorCortexRER, charpaths, min.sp = 100, winsorizeRER = 3, winsorizetrait = 3)
+write.table(brainSizeRes[order(brainSizeRes$p.adj),], "/ocean/projects/bio200034p/ikaplow/PredictionsToPhenotypes/BrainSizeForPRANK/brainSize_RERs.txt", sep="\t")
