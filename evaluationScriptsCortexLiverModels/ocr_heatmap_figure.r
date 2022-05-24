@@ -1,6 +1,5 @@
 library(ape)
 library(stringr)
-library(phylolm)
 
 tree <- read.tree(file = "Zoonomia_ChrX_lessGC40_241species_30Consensus.tree")
 
