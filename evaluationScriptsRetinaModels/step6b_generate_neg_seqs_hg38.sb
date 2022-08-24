@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH -n 1
+#SBATCH --partition=pfen1
+#SBATCH --job-name=genNullSeq
+#SBATCH --mem=16G
+#SBATCH --error=genNullSeq_%A_%a_err.txt
+#SBATCH --output=genNullSeq_%A_%a_out.txt
+
+# generate 500 bp background repository of hg38 sequences 
+BGDIR="/home/csriniv1/resources/biasaway/hg38/500bp"
+GENOME="/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/HumanGenome/hg38.fa"
+
+#echo "generating background repo..."
+#bash /home/csriniv1/resources/biasaway/create_background_repository.sh -f $GENOME -s 500 -r $BGDIR
+#echo "Done!"
+
+FGFASTA="/projects/pfenninggroup/machineLearningForComputationalBiology/retina/data/human/GSE137311/hg38_ret_noTSS_filtered_500bp.fa"
+BGFASTA="/projects/pfenninggroup/machineLearningForComputationalBiology/retina/data/human/GSE137311/hg38_ret_noTSS_filtered_500bp_neg.fa"
+
+echo "generating negative sequences..."
+# generate 500bp background sequence for human retina ATAC-seq filtered, mappable peaks
+biasaway c --foreground $FGFASTA --nfold 10 \
+	--deviation 2.6 --step 50 --seed 1 --winlen 100 \
+	--bgdirectory $BGDIR --seed 12345 > $BGFASTA
+echo "Done!"
+echo $BGFASTA

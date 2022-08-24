@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH -n 1
+#SBATCH --partition=pfen1
+#SBATCH --job-name=genNullSeq
+#SBATCH --mem=10G
+#SBATCH --error=logs/genNullSeq_%A_%a_out.txt
+#SBATCH --output=logs/genNullSeq_%A_%a_out.txt
+
+# generate 500 bp background repository of mm10 sequences
+BGDIR="/home/csriniv1/resources/biasaway/mm10/500bp"
+GENOME="/home/csriniv1/resources/mm10.fa"
+
+#echo "generating background repo..."
+#bash /home/csriniv1/resources/biasaway/create_background_repository.sh -f $GENOME -s 500 -r $BGDIR
+#echo "Done!"
+
+FGFASTA="/projects/pfenninggroup/machineLearningForComputationalBiology/retina/data/mouse/GSE146897_WTMouse_ret_ATAC/mm10_ret_noTSS_filtered_500bp.fa"
+BGFASTA="/projects/pfenninggroup/machineLearningForComputationalBiology/retina/data/mouse/GSE146897_WTMouse_ret_ATAC/mm10_ret_noTSS_filtered_500bp_neg.fa"
+
+echo "generating negative sequences..."
+# generate 500bp background sequence for mouse retina ATAC-seq filtered peaks
+biasaway c --foreground $FGFASTA --nfold 10 \
+	--deviation 2.6 --step 50 --winlen 100 \
+	--bgdirectory $BGDIR --seed 12345 > $BGFASTA
+echo "Done!"
+echo $BGFASTA
