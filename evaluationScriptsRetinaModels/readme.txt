@@ -27,4 +27,8 @@ step11c_predict_glires.py : A Python 3 script that uses the convolutional neural
 
 step12a_deepshap.py : A Python 3 script that uses the DeepShAP algorithm to score retinal open chromatin sequences for their per-base importance of contribution towards model classification.
 
-step12b_modisco.py : 
+step12b_modisco.py : A Python 3 script that uses the DeepShAP scores to generate position weight matrices representing transcription factor motifs that were learned by the convolutional neural network.
+
+step14b_report_metrics.py : A Python 3 script that ouputs all reported test set metrics.
+
+tfmodisco_visualize.ipynb : A iPython notebook that shows visualizations corresponding to the DeepShAP and TF-MoDISco analyses.
