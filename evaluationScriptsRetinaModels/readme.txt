@@ -19,3 +19,12 @@ step6b_generate_neg_seqs_hg38.sb : A sbatch script that generates 10X G-C matche
 
 step7_split_trainvaltest.py : A Python 3 script that partitions the retina filtered open chromatin sequences by chromosome into training, validation, and test sets as input datasets for machine learning models.
 
+step9c_keras_cnn.py : A Python 3 script that trains a convolutional neural network to classify DNA sequences underlying open chromatin by their cell type membership.
+
+step10_roc_evaluations.py : A Python 3 script that produces visualizations of the convolutional neural network performance on data that the model was not trained on.
+
+step11c_predict_glires.py : A Python 3 script that uses the convolutional neural network to annotate orthologs of retinal open chromatin sequences,
+
+step12a_deepshap.py : A Python 3 script that uses the DeepShAP algorithm to score retinal open chromatin sequences for their per-base importance of contribution towards model classification.
+
+step12b_modisco.py : 
