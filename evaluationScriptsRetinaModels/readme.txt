@@ -32,3 +32,5 @@ step12b_modisco.py : A Python 3 script that uses the DeepShAP scores to generate
 step14b_report_metrics.py : A Python 3 script that ouputs all reported test set metrics.
 
 tfmodisco_visualize.ipynb : A iPython notebook that shows visualizations corresponding to the DeepShAP and TF-MoDISco analyses.
+
+keras2.yml : An anaconda Python 3 environment containing all the necessary packages to run the Python 3 scripts in this folder.
