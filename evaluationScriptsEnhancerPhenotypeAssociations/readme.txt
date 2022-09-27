@@ -8,7 +8,7 @@ This script is not intended to be run as a whole; rather, different blocks of co
 It is provided to illustrate how figures were produced and is not intended for reuse. 
 
 p_dist_collect.py is a Python 3 script for comparing p-value distributions for p-values associated with OCRs that are
-near or not near certain genes. It takes four positional command-line arguments:
+near or not near certain genes. It can also be used for p-value-like metrics, such as the fraction of successful trials. It takes four positional command-line arguments:
 1) A list of genes of interest, one per line
 2) A space-separated file with each gene near each OCR, one pair per line, with the OCRs in column 4 and the genes in column 8
 3) A space-separated file with the p-value associated with each OCR (one per line), with OCRs in column 1 and p-values in column 4.
@@ -27,6 +27,12 @@ near or not near OCRS. It takes three positional command-line arguments:
 The program writes output as described, and additionally reports the result of a Wilcoxon rank-sum test between the set of p-values
 associated with genes near OCRs of interest and the set of p-values associated with all other genes that occur in input file 3. 
 OCRs of interest are those that appear in column 4 of input file 1.
+
+phylolm_p_correlation is a Python 3 script for comparing p-value distributions for p-values associated with OCRs with average PhyloP conservation scores. It can also be used for p-value-like metrics, such as the fraction of successful trials. It takes three positional command-line arguments:
+1) Mouse or Human coordinates of each OCR, as a BED file. 
+2) A space-separated file with the p-value associated with each OCR (one per line), with OCRs in column 1 and p-values in column 4.
+3) [human | mouse], to specify the species to use for PhyloP scores. Paths for each species are hardcoded. 
+The program reports the result of a Pearson correlation between the set of p-values associated with OCRs and the average PhyloP scores of those OCRs. 
 
 makePGLSSbatch.py is a Python 3 script for creating a submission script for running ocr_phylolm.r or ocr_phyloglm.r on a cluster.
 
