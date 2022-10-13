@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-#python3 phylolm_p_correlation.py OCR BED file, p-value file, [human | mouse]
-# Human & mouse PhyloPpaths are hardcoded. Assumes per-chromosome file for human
-# and a single fiel for mouse. 
+#python3 phylop_p_correlation.py [OCR BED file], [p-value file], [human | mouse]
+# Human & mouse PhyloP paths are hardcoded. Assumes per-chromosome file for human
+# and a single file for mouse. OCRs in BED file must be a subset of those in p-value file.
 
 import pyBigWig, sys
 from scipy.stats import pearsonr
