@@ -28,11 +28,16 @@ The program writes output as described, and additionally reports the result of a
 associated with genes near OCRs of interest and the set of p-values associated with all other genes that occur in input file 3. 
 OCRs of interest are those that appear in column 4 of input file 1.
 
-phylolm_p_correlation is a Python 3 script for comparing p-value distributions for p-values associated with OCRs with average PhyloP conservation scores. It can also be used for p-value-like metrics, such as the fraction of successful trials. It takes three positional command-line arguments:
+phylop_p_correlation is a Python 3 script for comparing p-value distributions for p-values associated with OCRs with average PhyloP conservation scores. It can also be used for p-value-like metrics, such as the fraction of successful trials. It takes three positional command-line arguments:
 1) Mouse or Human coordinates of each OCR, as a BED file. 
-2) A space-separated file with the p-value associated with each OCR (one per line), with OCRs in column 1 and p-values in column 4.
+2) A comma-separated file with the p-value associated with each OCR (one per line), with OCRs in column 1 and p-values in column 4.
 3) [human | mouse], to specify the species to use for PhyloP scores. Paths for each species are hardcoded. 
-The program reports the result of a Pearson correlation between the set of p-values associated with OCRs and the average PhyloP scores of those OCRs. 
+The program reports the result of a Pearson correlation between the set of p-values associated with OCRs and the average PhyloP scores of those OCRs.
+
+distance_p_correlation is a Python 3 script for comparing p-value distributions for p-values associated with OCRs with genemoic distances. It can also be used for p-value-like metrics, such as the fraction of successful trials. It takes three positional command-line arguments:
+1) Mouse or Human coordinates of each OCR, as a BED file, with a distance (or other metric) as the last column
+2) A comma-separated file with the p-value associated with each OCR (one per line), with OCRs in column 1 and p-values in column 4.
+The program reports the result of a Pearson correlation between the set of p-values associated with OCRs and the distances associated with those OCRs.
 
 makePGLSSbatch.py is a Python 3 script for creating a submission script for running ocr_phylolm.r or ocr_phyloglm.r on a cluster.
 
