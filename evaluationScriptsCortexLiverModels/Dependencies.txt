@@ -16,3 +16,4 @@ MATLAB R2021b
 R >= 4.0
 ape R pacakge
 stringr R package
+gplots R package version 3.0.1 from github/ChristophH/gplots

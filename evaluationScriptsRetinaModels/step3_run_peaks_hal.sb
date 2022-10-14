@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH -n 1
+#SBATCH --partition=pfen_bigmem
+#SBATCH --job-name=HALPEAK
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=48G
+#SBATCH --error=hal_%A_%a.err.txt
+#SBATCH --output=hal_%A_%a.out.txt
+
+halLiftover --bedType 4 /projects/pfenninggroup/machineLearningForComputationalBiology/alignCactus/10plusway-master.hal Human /projects/pfenninggroup/machineLearningForComputationalBiology/retina/data/human/GSE137311/hg38_ret_noTSS_filtered_labeled_500bp.bed Mouse /projects/pfenninggroup/machineLearningForComputationalBiology/retina/data/human/GSE137311/hg38_ret_noTSS_filtered_labeled_halLiftover_mm10.bed
+
+#halLiftover --bedType 4 /projects/pfenninggroup/machineLearningForComputationalBiology/alignCactus/10plusway-master.hal \
+#Mouse /projects/pfenninggroup/machineLearningForComputationalBiology/retina/data/mouse/GSE146897_WTMouse_ret_ATAC/mm10_ret_noTSS_filtered_labeled.bed \
+#Human /projects/pfenninggroup/machineLearningForComputationalBiology/retina/data/mouse/GSE146897_WTMouse_ret_ATAC/mm10_ret_noTSS_filtered_labeled_hg38.bed
