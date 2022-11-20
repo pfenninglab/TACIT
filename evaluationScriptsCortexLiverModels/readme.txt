@@ -29,3 +29,5 @@ plotPredictionsVsEvolutionaryDist5Species.m: make phylogeny-matching correlation
 species_tree.R: construct species tree using predictions at enhancer orthologs as features
 
 ocr_heatmap_figure.r: plot heatmap of OCR activity predictions
+
+filterMotorCortexPeakOrthologs.sh: filter OCR orthologs so that no regions are repeated
