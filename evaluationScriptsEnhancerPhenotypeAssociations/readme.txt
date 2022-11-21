@@ -7,7 +7,7 @@ The code included contains various hardcoded filenames and values that were chan
 This script is not intended to be run as a whole; rather, different blocks of code were run to produce different figures.
 It is provided to illustrate how figures were produced and is not intended for reuse. 
 
-pdists.R is a small script used for plotting the densities of the p-value distributions for associations between motor cortex and PV neuron OCRs and brain size.
+pdists.R is a small script used for plotting histograms of the p-value distributions for associations between (motor cortex and PV neuron) OCRs and (brain size and solitary living).
 
 p_dist_collect.py is a Python 3 script for comparing p-value distributions for p-values associated with OCRs that are
 near or not near certain genes. It can also be used for p-value-like metrics, such as the fraction of successful trials. It takes four positional command-line arguments:
