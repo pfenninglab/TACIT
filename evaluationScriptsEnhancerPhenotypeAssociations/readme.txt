@@ -48,3 +48,5 @@ runPGLSPSCFilt.sh is a shell script that was used to associate binary phenotypes
 correctSolitaryResults.r is an R script that does Benjamini-Hochberg correction for solitary and group living associations.
 
 correctVocalLearningResults.r is an R script that does Benjamini-Hochberg correction for vocal learning associations.
+
+sim_perm_p.val_subset.R is an R script that computes t-test p-values for simulated data with different fractions of features from samples drawn from different distributions using the parametric t-test and the emperical permutation-based method used for TACIT that is akin to a one-tailed test.
