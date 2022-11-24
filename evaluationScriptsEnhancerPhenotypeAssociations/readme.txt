@@ -1,11 +1,13 @@
 Dependencies.txt lists dependencies for files in this directory beyond those listed in the main directory.
 
-ocr_phylolm_figures.r containts code was used in the generation of figures 4, 5, 6C-D, S8, and S9. 
+ocr_phylolm_figures.r contains code was used in the generation of figures 4, 5, 6C-D, S8, and S9. 
 It includes some code from ocr_phylolm.r, for use in loading and generating data, as well as several blocks of
 code below that were used to generate plots showing associations between OCR activity predictions and phenotypes.
 The code included contains various hardcoded filenames and values that were changed to generate panels for different OCRs and phenotypes.
 This script is not intended to be run as a whole; rather, different blocks of code were run to produce different figures.
 It is provided to illustrate how figures were produced and is not intended for reuse. 
+
+pdists.R is a small script used for plotting histograms of the p-value distributions for associations between (motor cortex and PV neuron) OCRs and (brain size and solitary living).
 
 p_dist_collect.py is a Python 3 script for comparing p-value distributions for p-values associated with OCRs that are
 near or not near certain genes. It can also be used for p-value-like metrics, such as the fraction of successful trials. It takes four positional command-line arguments:
