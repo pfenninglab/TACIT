@@ -14,7 +14,7 @@ This pipeline has been tested on Centos versions 7 and 8. However, we expect it 
 
 
 ## Utilities:
-`compute_perm_pvals.py`: Script for computing permulation p-values using the output from `ocr_phylo(g)lm.r`. See the header comment of this script for usage details.
+`compute_perm_pvals.py`: Script for computing permulation p-values using the output from `ocr_phylo(g)lm.r`. See the header comment of this script for usage details.  We recommend using this method only when compute time is limited and the method below when sufficient compute time is available.
 
 `compute_perm_pvals_kulinskaya.py` is an alternate version of compute_perm_pvals.py that, instead of using a pure one-sided test, used the method of Kulinskaya, 2008 (https://arxiv.org/abs/0810.2124), in which permulations in the opposite direction are rejected. It otherwise behaves the same as compute_perm_pvals.py, except that this script allows for multiple input directories (preceded by a count).  We recommend using this method instead of compute_perm_pvals.py for traits that can be easily permulated, as it is more principled but slower due to its rejection of permulations in the opposite direction.
 
