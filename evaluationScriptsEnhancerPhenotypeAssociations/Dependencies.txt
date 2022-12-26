@@ -1,4 +1,4 @@
-R packages (R >= 3.6.0):
+R packages (R 4.0.3):
 viridis
 s2dverification
 broom
