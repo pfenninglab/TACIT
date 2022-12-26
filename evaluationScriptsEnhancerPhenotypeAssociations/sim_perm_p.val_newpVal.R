@@ -25,7 +25,7 @@ gen_xy <- function( frac_feat = 0.1, frac_samples = 0.5,
 }
 
 ###################################
-## one-sided test with subset of permutations with same direction
+## test with subset of permutations with same direction
 emp_p_with_same_sign <- function( x, y, p, c, n_perm = 100, ncores = 1){
   nfeat = ncol(x); out = list()
   for(i in seq(n_perm)){
