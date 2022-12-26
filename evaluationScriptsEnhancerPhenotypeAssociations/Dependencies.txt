@@ -1,6 +1,10 @@
 R packages (R >= 3.6.0):
 viridis
 s2dverification
+broom
+viridis
+tidyverse
+Rfast
 
 Python packages (python 3):
 scipy

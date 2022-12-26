@@ -14,9 +14,9 @@ This pipeline has been tested on Centos versions 7 and 8. However, we expect it 
 
 
 ## Utilities:
-`compute_perm_pvals.py`: Script for computing permulation p-values using the output from `ocr_phylo(g)lm.r`. See the header comment of this script for usage details.
+`compute_perm_pvals.py`: Script for computing permulation p-values using the output from `ocr_phylo(g)lm.r`. See the header comment of this script for usage details.  We recommend using this method only when compute time is limited and the method below when sufficient compute time is available.
 
-`compute_perm_pvals_kulinskaya.py` is an alternate version of compute_perm_pvals.py that, instead of using a pure one-sided test, used the method of Kulinskaya, 2008 (https://arxiv.org/abs/0810.2124), in which permulations in the opposite direction are rejected. It otherwise behaves the same as compute_perm_pvals.py, except that this script allows for multiple input directories (preceded by a count).  We recommend using this method instead of compute_perm_pvals.py for traits that can be easily permulated, as it is more principled but slower due to its rejection of permulations in the opposite direction.
+`compute_perm_pvals_kulinskaya.py` is an alternate version of compute_perm_pvals.py that, instead of using a pure one-sided test, rejects permulations in the opposite direction are rejected. It otherwise behaves the same as compute_perm_pvals.py, except that this script allows for multiple input directories (preceded by a count).  We recommend using this method instead of compute_perm_pvals.py for traits that can be easily permulated, as it is more principled but slower due to its rejection of permulations in the opposite direction.
 
 
 ## Dependencies:
@@ -61,16 +61,14 @@ Alyssa Lawler (alawler@andrew.cmu.edu)
 
 Chaitanya Srinivasan (csriniv1@andrew.cmu.edu)
 
-Morgan Wirthlin (mwirthlin@cmu.edu)
-
-Wynn Meyer (wym219@lehigh.edu)
+Carson Sestili (csestili@andrew.cmu.edu)
 
 Andreas Pfenning (apfenning@cmu.edu)
 
 ## References
-1. D. Eddelbuettel, R. François, J. Allaire, K. Ushey, Q. Kou, N. Russel, J. Chambers, D. Bates, Rcpp: Seamless R and C++ integration. *J. Stat. Softw*. **40**, 1–18 (2011).
-2. L. S. T. Ho, C. Ané, A linear-time algorithm for Gaussian and non-Gaussian trait evolution models. *Syst. Biol*. **63**, 397–408 (2014).
-3. E. Kulinskaya, On two-sided p-values for non-symmetric distributions. *arXiv*. https://arxiv.org/abs/0810.2124 (2008).
+1. I. M. Kaplow, A. J. Lawler, D. E. Schaffer, C. Srinivasan, M. E. Wirthlin, B. N. Phan, X. Zhang, K. Foley, A. R. Brown, Zoonomia Consortium, W. K. Meyer, A. R. Pfenning, Relating enhancer genetic variation across mammals to complex phenotypes using machine learning. *bioRxiv*. https://www.biorxiv.org/content/10.1101/2022.08.26.505436v1 (2022).
+2. D. Eddelbuettel, R. François, J. Allaire, K. Ushey, Q. Kou, N. Russel, J. Chambers, D. Bates, Rcpp: Seamless R and C++ integration. *J. Stat. Softw*. **40**, 1–18 (2011).
+3. L. S. T. Ho, C. Ané, A linear-time algorithm for Gaussian and non-Gaussian trait evolution models. *Syst. Biol*. **63**, 397–408 (2014).
 4. E. Paradis, K. Schliep, ape 5.0: an environment for modern phylogenetics and evolutionary analyses in R. *Bioinformatics*. **35**, 526–528 (2019).
 5. M. W. Pennell, J. M. Eastman, G. J. Slater, J. W. Brown, J. C. Uyeda, R. G. FitzJohn, M. E. Alfaro, L. J. Harmon, geiger v2.0: an expanded suite of methods for fitting macroevolutionary models to phylogenetic trees. *Bioinformatics*. **30** (2014), pp. 2216–2218.
 6. E. Saputra, A. Kowalczyk, L. Cusick, N. Clark, M. Chikina, Phylogenetic Permulations: A Statistically Rigorous Approach to Measure Confidence in Associations in a Phylogenetic Context. *Mol. Biol. Evol*. **38**, 3004–3021 (2021).
