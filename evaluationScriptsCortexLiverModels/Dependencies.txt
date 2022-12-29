@@ -17,3 +17,4 @@ R >= 4.0
 ape R pacakge
 stringr R package
 gplots R package version 3.0.1 from github/ChristophH/gplots
+MEME suite 5.3.0 (https://meme-suite.org/meme/index.html)

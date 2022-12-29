@@ -31,3 +31,13 @@ species_tree.R: construct species tree using predictions at enhancer orthologs a
 ocr_heatmap_figure.r: plot heatmap of OCR activity predictions
 
 filterMotorCortexPeakOrthologs.sh: filter OCR orthologs so that no regions are repeated
+
+makeSummitCenteredFastaFromNarrowPeak.py: convert a narrowPeak file to a summit-centered fasta file
+
+makeSummitCenteredFastaFromNarrowPeakScript.py: make a script that runs makeSummitCenteredFastaFromNarrowPeak.py on a list of narrowPeak files
+
+makeFIMOListScript.py: make a script that runs FIMO from the MEME suite on a list of fasta files
+
+logistic_train_modified.py: train, evaluate, or make predictions with a logistic regression model with motif score features
+
+makeLogisticTrainModifiedScript.py: make a script that uses logistic_train_modified.py to make logistic model predictions for features from a list of FIMO files
