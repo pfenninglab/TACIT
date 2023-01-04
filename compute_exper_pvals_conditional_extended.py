@@ -40,7 +40,7 @@ for line in inFile:
         #corPvals.append(tokens[2])
         coeffs.append(tokens[2])
         coeffs_negative[tokens[0]] = tokens[2][0] == "-"
-        if len(tokens) >= 6:
+        if len(tokens) >= 7:
             lower_trials[tokens[0]] = int(tokens[6])
             count_trials[tokens[0]] = int(tokens[4])
         else:
