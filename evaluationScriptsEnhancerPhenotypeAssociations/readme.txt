@@ -20,6 +20,10 @@ The program writes output as described, and additionally reports the result of a
 associated with OCRs near genes of interest and the set of p-values near other genes but not genes of interests. 
 OCRs near no genes (i.e. that do not occur in column 4 of input file 2) are ignored.
 
+p_dist_collect_phylolm.py is a variant of the above that collects the non-permulation phylolm p-value (column 2) instead of the permulations p-value (column 4). 
+
+p_dist_collect_tab.py is a variant of the above that assume a TSV instead of a CSV as input 3. It was used for assesing the p-value shift of the RERconverge results.
+
 p_dist_collect_gene.py is a Python 3 script for comparing p-value distributions for p-values associated with genes that are
 near or not near OCRS. It takes three positional command-line arguments:
 1) A space-separated file with each gene near each OCR, one pair per line, with the OCRs in column 4 and the genes in column 8
@@ -30,13 +34,13 @@ The program writes output as described, and additionally reports the result of a
 associated with genes near OCRs of interest and the set of p-values associated with all other genes that occur in input file 3. 
 OCRs of interest are those that appear in column 4 of input file 1.
 
-phylop_p_correlation is a Python 3 script for comparing p-value distributions for p-values associated with OCRs with average PhyloP conservation scores. It can also be used for p-value-like metrics, such as the fraction of successful trials. It takes three positional command-line arguments:
+phylop_p_correlation.py is a Python 3 script for comparing p-value distributions for p-values associated with OCRs with average PhyloP conservation scores. It can also be used for p-value-like metrics, such as the fraction of successful trials. It takes three positional command-line arguments:
 1) Mouse or Human coordinates of each OCR, as a BED file. 
 2) A comma-separated file with the p-value associated with each OCR (one per line), with OCRs in column 1 and p-values in column 4.
 3) [human | mouse], to specify the species to use for PhyloP scores. Paths for each species are hardcoded. 
 The program reports the result of a Pearson correlation between the set of p-values associated with OCRs and the average PhyloP scores of those OCRs.
 
-distance_p_correlation is a Python 3 script for comparing p-value distributions for p-values associated with OCRs with genemoic distances. It can also be used for p-value-like metrics, such as the fraction of successful trials. It takes three positional command-line arguments:
+distance_p_correlation.py is a Python 3 script for comparing p-value distributions for p-values associated with OCRs with genemoic distances. It can also be used for p-value-like metrics, such as the fraction of successful trials. It takes three positional command-line arguments:
 1) Mouse or Human coordinates of each OCR, as a BED file, with a distance (or other metric) as the last column
 2) A comma-separated file with the p-value associated with each OCR (one per line), with OCRs in column 1 and p-values in column 4.
 The program reports the result of a Pearson correlation between the set of p-values associated with OCRs and the distances associated with those OCRs.
