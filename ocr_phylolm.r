@@ -70,6 +70,9 @@ preds = read.csv(file = args[7], header = F, sep = "\t")
 names(preds)[1] = "OCR"
 te = read.csv(file = args[8], header=F)
 pred.species = gsub(" ", "_", te$V1)
+if (length(pred.species)+1 != ncol(preds)) {
+  print("Warning: Number of species names does not match number of species.")
+}
 names(preds)[2:(length(pred.species)+1)] = pred.species
 
 common.species = intersect(intersect(pred.species, tree$tip.label), trait.species)
