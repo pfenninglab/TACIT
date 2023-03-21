@@ -128,12 +128,22 @@ for (i in 0:max_iter) {
         int.trait = simpermvec(int.trait.real, int.tree.di, rm=rate.matrix)
       }
       dat <- data.frame(X = as.double(int.preds), Y = int.trait)
-      m <- phylolm(Y ~ X, data = dat, phy=int.tree.di, model = "BM")
-      enh.names[index] = name
-      m.coeff = summary(m)$coefficients
-      p.vals[index] = m.coeff[8]
-      coeffs[index] = m.coeff[2]
-      index = index + 1
+      m <- tryCatch(
+        {
+        phylolm(Y ~ X, data = dat, phy=int.tree.di, model = "BM")
+        },
+        error=function(e) {
+          #print(name)
+          return(NULL)
+        })
+      if (!is.null(m)) {
+        enh.names[index] = name
+        m.coeff = summary(m)$coefficients
+        p.vals[index] = m.coeff[8]
+        coeffs[index] = m.coeff[2]
+        index = index + 1
+      }
+
     }
   } 
 }
