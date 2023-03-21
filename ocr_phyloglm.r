@@ -107,12 +107,23 @@ for (i in 0:max_iter) {
         int.trait[fg.species.shuffled] = 1
       }
       dat <- data.frame(Y=int.trait, X=as.double(int.preds), row.names = int.species)
-      m <- phyloglm(Y ~ X, data = dat, phy=int.tree.di,  method = "logistic_MPLE")
-      enh.names[index] = name
-      m.coeff = summary(m)$coefficients
-      p.vals[index] = m.coeff[8]
-      coeffs[index] = m.coeff[2]
-      index = index + 1
+      m <- tryCatch(
+        {
+        phyloglm(Y ~ X, data = dat, phy=int.tree.di,  method = "logistic_MPLE")
+        },
+        error=function(e) {
+          #message('An Error Occurred')
+          #print(e)
+          print(name)
+          return(NULL)
+        })
+      if (!is.null(m)) {
+        enh.names[index] = name
+        m.coeff = summary(m)$coefficients
+        p.vals[index] = m.coeff[8]
+        coeffs[index] = m.coeff[2]
+        index = index + 1
+      }
     }
   }
 }
