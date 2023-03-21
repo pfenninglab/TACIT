@@ -8,7 +8,7 @@
 #    output file name "template" (see below), 
 #    I, output file number and inital line in predictions matrix (see below), 
 #    J, step size in predictions matrix (see below), 
-#    (changed) The name of a CSV with columns Enhancer and Missing_Trials
+#    (changed) The name of a CSV with columns OCR and Missing_Trials
 #         that specifies how many permulations (K) to do for each OCR
 #    S, random seed to use, 
 #    column in phenotype file
@@ -59,9 +59,9 @@ row_init = as.integer(args[11])
 row_step = as.integer(args[12])
 enh_details = read.csv(file = args[13], header = T)
 enh_shuffles = enh_details$Missing_Trials
-names(enh_shuffles) = enh_details$Enhancer
+names(enh_shuffles) = enh_details$OCR
 enh_coeffs = enh_details$Coeff
-names(enh_coeffs) = enh_details$Enhancer
+names(enh_coeffs) = enh_details$OCR
 
 source(paste(args[16], "/fast_bin_perm.r", sep=""))
 
