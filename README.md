@@ -64,7 +64,7 @@ Alyssa Lawler (alawler@andrew.cmu.edu)
 
 Chaitanya Srinivasan (csriniv1@andrew.cmu.edu)
 
-Carson Sestili (csestili@andrew.cmu.edu)
+Heather Sestili (csestili@andrew.cmu.edu)
 
 Andreas Pfenning (apfenning@cmu.edu)
 
