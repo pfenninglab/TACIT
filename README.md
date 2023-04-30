@@ -55,6 +55,13 @@ evaluationScriptsHiC: scripts for evaluating long-range interactions between phe
 
 Dependencies specific to those scripts are listed in the individual directories.  Models can be found at http://daphne.compbio.cs.cmu.edu/files/ikaplow/TACITSupplement/.
 
+## Instructions for obtaining predictions from models trained in Kaplow, Lawler, Schaffer, _et al_.:
+1. Go to the UCSC Genome Browser (genome.ucsc.edu).
+2. Under "My Data," select "Track Hubs."
+3. This will take you to the Track Data Hubs pages, which has three tabs.  Select "Connected Hubs."
+4. Paste in https://cgl.gi.ucsc.edu/data/cactus/241-mammalian-2020v2-hub/hub.txt, and click "Add Hub."
+5. For obtaining the predictions in the future, go to https://genome.ucsc.edu/cgi-bin/hgGateway?genome=Homo_sapiens&hubUrl=https://cgl.gi.ucsc.edu/data/cactus/241-mammalian-2020v2-hub/hub.txt, where the genome= parameter can be replaced with other species.
+
 ## Contact
 Daniel Schaffer (dschaffe@andrew.cmu.edu)
 
@@ -69,7 +76,7 @@ Heather Sestili (csestili@andrew.cmu.edu)
 Andreas Pfenning (apfenning@cmu.edu)
 
 ## References
-1. I. M. Kaplow, A. J. Lawler, D. E. Schaffer, C. Srinivasan, M. E. Wirthlin, B. N. Phan, X. Zhang, K. Foley, A. R. Brown, Zoonomia Consortium, W. K. Meyer, A. R. Pfenning, Relating enhancer genetic variation across mammals to complex phenotypes using machine learning. *bioRxiv*. https://www.biorxiv.org/content/10.1101/2022.08.26.505436v1 (2022).
+1. I. M. Kaplow, A. J. Lawler, D. E. Schaffer, C. Srinivasan, H. H. Sestili, M. E. Wirthlin, B. N. Phan, K. Prasad, A. R. Brown, X. Zhang, K. Foley, D. P. Genereux, Zoonomia Consortium, E. K. Karlsson, K. Lindblad-Toh, W. K. Meyer, A. R. Pfenning, Relating enhancer genetic variation across mammals to complex phenotypes using machine learning. *Science*. **380**, eabm7993 (2023).
 2. D. Eddelbuettel, R. François, J. Allaire, K. Ushey, Q. Kou, N. Russel, J. Chambers, D. Bates, Rcpp: Seamless R and C++ integration. *J. Stat. Softw*. **40**, 1–18 (2011).
 3. L. S. T. Ho, C. Ané, A linear-time algorithm for Gaussian and non-Gaussian trait evolution models. *Syst. Biol*. **63**, 397–408 (2014).
 4. E. Paradis, K. Schliep, ape 5.0: an environment for modern phylogenetics and evolutionary analyses in R. *Bioinformatics*. **35**, 526–528 (2019).
