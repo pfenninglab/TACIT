@@ -77,6 +77,8 @@ Chaitanya Srinivasan (csriniv1@andrew.cmu.edu)
 
 Heather Sestili (csestili@andrew.cmu.edu)
 
+Tianyu Lu (tianyul3@andrew.cmu.edu)
+
 Andreas Pfenning (apfenning@cmu.edu)
 
 ## References
