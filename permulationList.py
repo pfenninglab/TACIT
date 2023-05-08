@@ -20,7 +20,7 @@ if __name__ == '__main__':
 	parser.add_argument('-o', '--output', required=True, help="output file name, e.g. perm10k")
 	
 	args = parser.parse_args()
-	df = pd.read_csv(args.input)
+	df = pd.read_csv(args.input, header='infer')
 	if args.colName is not None:
 		df = df.loc[df[args.colName] <= float(args.threshold)]
 	else:

@@ -52,6 +52,9 @@ for line in inFile:
         #corPvals.append(tokens[2])
         coeffs.append(tokens[2])
         coeffs_negative[tokens[0]] = tokens[2][0] == "-"
+    else:
+        print("Warning: The following line in the p-value file has an incorrect format")
+        print(line)
 inFile.close()
 
 lower_trials = {}
