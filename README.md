@@ -41,7 +41,7 @@ stringr package >= 1.4.0
 ### For Python programs:
 Python 3
 
-pandas 1.3.5
+pandas 0.2.24-1.3.5
 
 ## Scripts for generating figures in Kaplow, Lawler, Schaffer, _et al_. (1):
 
