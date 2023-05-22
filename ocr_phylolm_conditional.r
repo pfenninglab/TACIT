@@ -54,7 +54,7 @@ simpermvec=function (namedvec, treewithbranchlengths, rm=NULL)
 args = commandArgs()
 seed = as.integer(args[14])
 set.seed(seed)
-
+print("In new version")
 tree = read.tree(file = args[6]) #Change to read.nexus for a nexus-format tree
 
 #Read phenotype data
