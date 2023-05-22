@@ -59,14 +59,9 @@ tree = read.tree(file = args[6]) #Change to read.nexus for a nexus-format tree
 
 #Read phenotype data
 traits = read.csv(file= args[9])
-trait.forShuf = args[15]
 trait.col = args[15:length(args)]
 trait.all = traits[trait.col]
-if (length(args) == 15) {
-        # Convert trait.col into an array
-        trait.all = as.matrix(trait.all)
-}
-trait.allForShuf = traits[[trait.forShuf]]
+trait.all = as.matrix(trait.all)
 valid = c()
 for (i in 1:nrow(trait.all)) {
   # Iterate through the rows of the matrix and find those with no NAs
@@ -89,7 +84,6 @@ if (length(valid) == 0) {
   # No rows with values from all species
   print("Warning: No species with phenotype annotations for all phenotypes.")
 }
-traitForShuf = trait.allForShuf[valid]
 species.lower = traits$species.binomial[valid]
 trait.species = str_to_title(species.lower)
 row.names(trait) = trait.species
@@ -103,7 +97,6 @@ if (length(pred.species)+1 != ncol(preds)) {
   print("Warning: Number of species names does not match number of species.")
 }
 names(preds)[2:(length(pred.species)+1)] = pred.species
-
 common.species = intersect(intersect(pred.species, tree$tip.label), trait.species)
 te = which(trait.species %in% common.species)
 tree.common = keep.tip(tree, common.species)
@@ -117,7 +110,7 @@ row_step = as.integer(args[12])
 enh_details = read.csv(file = args[13], header = T)
 enh_shuffles = enh_details$Missing_Trials
 names(enh_shuffles) = enh_details$OCR
-enh_coeffs = enh_details$Coeff[,1]
+enh_coeffs = as.matrix(enh_details$Coeff)[,1]
 names(enh_coeffs) = enh_details$OCR
 
 max_iter = (nrow(preds)-row_init) %/% row_step
@@ -143,11 +136,10 @@ for (i in 0:max_iter) {
     int.species = intersect(names(good.preds), common.species)
     int.preds = good.preds[int.species]
     int.trait = as.matrix(trait[int.species, ])
-    int.traitForShuf = traitForShuf[int.species]
     int.tree = keep.tip(tree.common, int.species)
     int.tree.di = multi2di(int.tree)
-    rate.matrix=ratematrix(int.tree.di, int.trait)
-    int.trait.real = int.trait
+    rate.matrix=ratematrix(int.tree.di, int.trait[,1])
+    int.trait.real = int.trait[,1]
     names(int.trait.real) = int.species
     if (length(args) > 15) {
       # Other traits should be used as additional covariates
@@ -160,13 +152,15 @@ for (i in 0:max_iter) {
       int.preds = as.double(int.preds)
     }
   
+    X = int.preds[order(row.names(int.preds)), ]
     for (f in 1:num_shuffles){ 
       repeat {
-        int.trait[,1] = simpermvec(int.trait.real, int.tree.di, rm=rate.matrix)
-      	X = int.preds
-      	Y = int.trait[,1]
-      	dat <- data.frame(X = X, Y = Y)
-        m <- phylolm(Y ~ X, data = dat, phy=int.tree.di, model = "BM")
+        int.traitShuf = as.data.frame(simpermvec(int.trait.real, int.tree.di, rm=rate.matrix))
+	Y = int.traitShuf[order(row.names(int.traitShuf)), ]
+	print(Y)
+      	dat = data.frame(X = X, Y = Y)
+	print(dat)
+        m = phylolm(Y ~ X, data = dat, phy=int.tree.di, model = "BM")
         m.coeff = summary(m)$coefficients
 	if (sign(m.coeff[2]) == orig_coeff_sign) {
 	  enh.names[index] = name
@@ -183,9 +177,9 @@ proc.time() - ptm
 options(warn = 1)
 
 #Output
-dat = data.frame(OCR = enh.names[1:index-1], Pvalue = p.vals[1:index-1])
+datOut = data.frame(OCR = enh.names[1:index-1], Pvalue = p.vals[1:index-1])
 for (i in 1:ncol(int.trait)) {
   # Iterate through the additional coefficients and add them to the data frame
-  dat = cbind(dat, Coeff = coeffs[1:index-1,i])
+  datOut = cbind(datOut, Coeff = coeffs[1:index-1,i])
 }
-write.csv(dat, sub(".csv", paste("_r", args[11], "_s", args[14], ".csv", sep=""),  args[10]), row.names = FALSE)
+write.csv(datOut, sub(".csv", paste("_r", args[11], "_s", args[14], ".csv", sep=""),  args[10]), row.names = FALSE)
