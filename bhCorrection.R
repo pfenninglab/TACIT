@@ -8,7 +8,7 @@ args <- commandArgs(trailingOnly = TRUE)
 input <- args[1]
 output <- args[2]
 # optional adjust column name
-if (length(args) >= 4) {
+if (length(args) >= 3) {
   pName <- args[3]
 } else {
   pName <- "Exp_Pvalue"
