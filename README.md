@@ -75,7 +75,7 @@ Alyssa Lawler (alawler@andrew.cmu.edu)
 
 Chaitanya Srinivasan (csriniv1@andrew.cmu.edu)
 
-Heather Sestili (csestili@andrew.cmu.edu)
+Heather Sestili (hharper@cmu.edu)
 
 Tianyu Lu (tianyul3@andrew.cmu.edu)
 
