@@ -160,6 +160,7 @@ for (i in 0:max_iter) {
         int.traitShuf = as.data.frame(simpermvec(int.trait.real, int.tree.di, rm=rate.matrix))
 	Y = int.traitShuf[order(row.names(int.traitShuf)), ]
       	dat = data.frame(X = X, Y = Y)
+	print(dat)
         m = phylolm(Y ~ X, data = dat, phy=int.tree.di, model = "BM")
         m.coeff = summary(m)$coefficients
 	if (sign(m.coeff[2]) == orig_coeff_sign) {
