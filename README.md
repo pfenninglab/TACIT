@@ -8,7 +8,7 @@ This pipeline has been tested on Centos versions 7 and 8. However, we expect it 
 
 ## Recommendations for computing enhancer-phenotype associations
 1. Run `ocr_phylo(g)lm.r` (described below).  If there are no OCRs with p-value < 0.05, then predicted open chromatin in the tissue or cell type of interested is not associated with the phenotype, so stop.
-2. Run `permulationList.py` (described below) on the output from ocr_phylo(g)lm.r with --threshold 1 and --permulation 999.
+2. Run `permulationList.py` (described below) on the output from `ocr_phylo(g)lm.r` with --threshold 1 and --permulation 999.
 3. Run `ocr_phylo(g)lm_conditional.r` (described below) on the output from `permulationList.py`.
 4. Run `compute_perm_pvals_conditional.py` (described below) on the output from `ocr_phylo(g)lm_conditional.r`.
 5. Run `permulationList.py` on the output from `compute_perm_pvals_conditional.py` with threshold 0.05 and --permulation 9000.
