@@ -79,6 +79,7 @@ Example: python compute_perm_pvals_conditional.py BrainSizeResidMotorCortexPhylo
 `compute_perm_pvals_conditional_extended.py` is a variant of the above script that offers some additional functionality. First, if an OCR occurs in the permulated results but not the original results file, it is skipped rather than raising an error. Second, it takes additional positional arguments specifying a maximum number of permulations and an additional output file; if more permulations than the maximum number are found, they are written to the additional output file for possible use in a later round. Third, the number of "better" trials (those in the numerator of the p-value) is explicitly reported as the 7th column of the output. And, if the "original" results file contains at least seven columns, it is assumed to be the output of this script and the number of "better" and total trials are initialized to those in the file, rather than 1. Fourth, if the unpermulated coefficient of an OCR is exactly 0, permulations whose coefficient is also exactly 0 will be accepted; this will not affect p-values in this case (which will always be 1) but will affect the reported number of trials for those OCRs.
 
 `permulationList.py`: Prepare output from phylogenetic permulations for an additional round of phylogenetic permulations.  This updates the "Missing_Trials" column to add additional missing trials for the subset of rows with sufficiently low p-values to warrent additional permulations.
+
 _Input arguments_:
 1. --input: csv file with Exp_Pvalue column and a column with peak name
 2. --threshold:  threshold used to filter peaks by p-values (remove peaks that are not close to significant for future rounds of permulations, use 1 if no permulations have been run)
@@ -90,6 +91,7 @@ _Input arguments_:
 Example: python permulationList.py --input motorCortex_brainSizeResid_results_perm1k.csv --threshold 0.05 --permulation 9000 --matrix cortex_ocrs_filtered_named.txt --colName Exp_Pvalue --output motorCortex_brainSizeResid_results_perm1k_pLessThan0.05
 
 `bhCorrection.R`: Run the Benjamini-Hochberg Procedure (5) on the p-values from phylogenetic permulations and create an output file that has the adjusted p-values, sorted from lowest to highest.
+
 _Input arguments (must be provided in order)_:
 1. input file with OCR names as well as the p-values from phylo(g)lm, coefficients from pylo(g)lm, permulations p-values, number of trials performed for each OCR (csv file, obtained from `compute_perm_pvals.py` or `compute_perm_pvals_conditional.py`)
 2. output file name, where output file will be input file with additional column with the Benjamini-Hochberg adjusted p-values
