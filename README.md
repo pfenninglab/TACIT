@@ -7,6 +7,17 @@ This pipeline has been tested on Centos versions 7 and 8. However, we expect it 
 
 ## Programs for OCR-phenotype association with phylo(g)lm (2) and phylogenetic permulations (3):
 `ocr_phylolm.r` and `ocr_phyloglm.r`:    Perform OCR-phenotype associations for continuous and binary traits, using phylolm and phyloglm, respectivly. Can generate unpermulated results as well as a fixed number of permulations for each OCR. See the header comment of this program for usage details, especially for external parallelization.
+_Input arguments (must be provided in order)_:
+1. tree file (Newick file)
+2. open chromatin predictions matrix file (text file, rows are OCRs, columns are species no header, first column is OCR names, tab-seperated, missing data is noted as -1),
+3. file listing species corresponding to predictions matrix columns (text file, one per line, in the format Genus species),
+4. phenotype file (csv file with column name headers, species names in a column called "species binomial" in the format genus_species for `ocr_phylolm.r` and  "Species Name" in the format Genus species for `ocr_phyloglm.r`)
+5. output file name "template," which includes a directory followed by a csv file name; output files will be the file name without the csv followed by the output file number and the random seed (example: if output file "template" given is /path/to/foo.csv, output will be in (I,S as below) /path/to/foo_rI_S.csv)
+6. I: output file number and inital line in predictions matrix
+7. J: step size in predictions matrix (see below),
+8. K: number of permulations per OCR (0 for true data / no permulations, make > 0 only if not using additional rejection sampler for accepting only permulations that preserve the direction from phylolm/phyloglm as described below; will apply phylolm to K permulations for OCRs on lines I, I+J, I+2J, ... until end of matrix is reached)
+9. S: random seed to use,
+10: name of column in phenotype file with phenotype
                   
 `ocr_phylolm_conditional.r` and `ocr_phylogml_conditional.r`: Conditional-test versions of the above scripts. Both have an additrional rejection sampler that only accepts permulations that associate with activity predictions in the same direction as the true phenotype. Instead of a fixed number of trials, both expect as input an CSV containing the original (unpermulated) coefficient and the number of trials to perform for each OCR. The specification for this input file matches the output of the conditional scripts for computing p-values, described below. 
 
@@ -72,7 +83,7 @@ Step 1: For processing bulk open chromatin data, we used the ENCODE open chromat
 
 Step 2: For training machine learning models to use DNA sequence to predict open chromatin (step 2), we used keras (https://keras.io/).  Our machine learning models can be found at http://daphne.compbio.cs.cmu.edu/files/ikaplow/TACITSupplement/CNNs/.  The models for predicting brain open chromatin and the models for predicting liver open chromatin trained using only mouse sequences can be found at https://github.com/pfenninglab/OCROrthologPrediction/tree/main/models (brain model architechture: brainEnhancer_humanMouseMacaqueRat_euarchontaglireEnhLooseOrthNeg_500bp_conv5_architecture.json, brain model weights: brainEnhancer_humanMouseMacaqueRat_euarchontaglireEnhLooseOrthNeg_500bp_conv5.hdf5, liver model architecture: liverEnhancer_euarchontaglireEnhLooseOrthNeg_500bp_conv5_architecture.json, liver model weights: liverEnhancer_euarchontaglireEnhLooseOrthNeg_500bp_conv5.hdf5).  For comparing results to DeepSEA Beluga, we input our sequences into https://humanbase.net/deepsea/ with the Beluga model option.
 
-Step 3: For mapping OCR orthologs across species, we used halLiftover (https://github.com/ComparativeGenomicsToolkit/hal) followed by HALPER (https://github.com/pfenninglab/halLiftover-postprocessing).  For making predictions at orthologs we used predictNewSequencesNoEvaluation.py from https://github.com/pfenninglab/OCROrthologPrediction.
+Step 3: For mapping OCR orthologs across species, we used halLiftover (https://github.com/ComparativeGenomicsToolkit/hal) followed by HALPER (https://github.com/pfenninglab/halLiftover-postprocessing).  For making predictions at orthologs we used `predictNewSequencesNoEvaluation.py` from https://github.com/pfenninglab/OCROrthologPrediction.
 
 ## Contact
 Daniel Schaffer (dschaffe@andrew.cmu.edu)
