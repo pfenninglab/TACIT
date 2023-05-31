@@ -1,19 +1,11 @@
 # TACIT Enhancer-Phenotype Association
 Enhancer-Phenotype Association from Tissue-Aware Conservation Inference Toolkit.
 
-We used this with open chromatin regions (OCRs) / predictions of open chromatin status (1), but the pipeline is also amenable to predictions of other proxies for enhancer activity.
-
-This pipeline begins with the step of TACIT for associating enhancer activity predictions with phenotypes (step 4 of Figure 1 from Kaplow*, Lawler*, Schaffer*, _et al_., Science, 2023) and continues through the end of the pipeline.  Here is a summary of how to do steps 1-3:
-
-Step 1: For processing bulk open chromatin data, we used the ENCODE open chromatin pipeline (https://github.com/ENCODE-DCC/atac-seq-pipeline).  For processing single-cell ATAC-seq data (step 1), we used Archr (https://www.archrproject.com/).  We removed potential promoters (OCRs within 20kb of a protein-coding transcription start site), potential super-enhancers (OCRs longer than 1kb), and OCRs overlapping protein-coding exons.
-
-Step 2: For training machine learning models to use DNA sequence to predict open chromatin (step 2), we used keras (https://keras.io/).  Our machine learning models can be found at http://daphne.compbio.cs.cmu.edu/files/ikaplow/TACITSupplement/CNNs/.  The models for predicting brain open chromatin and the models for predicting liver open chromatin trained using only mouse sequences can be found at https://github.com/pfenninglab/OCROrthologPrediction/tree/main/models (brain model architechture: brainEnhancer_humanMouseMacaqueRat_euarchontaglireEnhLooseOrthNeg_500bp_conv5_architecture.json, brain model weights: brainEnhancer_humanMouseMacaqueRat_euarchontaglireEnhLooseOrthNeg_500bp_conv5.hdf5, liver model architecture: liverEnhancer_euarchontaglireEnhLooseOrthNeg_500bp_conv5_architecture.json, liver model weights: liverEnhancer_euarchontaglireEnhLooseOrthNeg_500bp_conv5.hdf5).  For comparing results to DeepSEA Beluga, we input our sequences into https://humanbase.net/deepsea/ with the Beluga model option.
-
-Step 3: For mapping OCR orthologs across species, we used halLiftover (https://github.com/ComparativeGenomicsToolkit/hal) followed by HALPER (https://github.com/pfenninglab/halLiftover-postprocessing).  For making predictions at orthologs we used predictNewSequencesNoEvaluation.py from https://github.com/pfenninglab/OCROrthologPrediction.
+We used this with open chromatin regions (OCRs) / predictions of open chromatin status (1), but the pipeline is also amenable to predictions of other proxies for enhancer activity.  This pipeline begins with the step of TACIT for associating enhancer activity predictions with phenotypes (step 4 of Figure 1 from Kaplow*, Lawler*, Schaffer*, _et al_., Science, 2023 (1)) and continues through the end of the pipeline; an explanation of how to implement steps 1-3 can be found near the end of this README.
 
 This pipeline has been tested on Centos versions 7 and 8. However, we expect it to work on other distributions of Linux, MacOS, and Windows.
 
-## Programs for OCR-Phenotype association with phylo(g)lm (2) and phylogenetic permulations (3):
+## Programs for OCR-phenotype association with phylo(g)lm (2) and phylogenetic permulations (3):
 `ocr_phylolm.r` and `ocr_phyloglm.r`:    Perform OCR-phenotype associations for continuous and binary traits, using phylolm and phyloglm, respectivly. Can generate unpermulated results as well as a fixed number of permulations for each OCR. See the header comment of this program for usage details, especially for external parallelization.
                   
 `ocr_phylolm_conditional.r` and `ocr_phylogml_conditional.r`: Conditional-test versions of the above scripts. Both have an additrional rejection sampler that only accepts permulations that associate with activity predictions in the same direction as the true phenotype. Instead of a fixed number of trials, both expect as input an CSV containing the original (unpermulated) coefficient and the number of trials to perform for each OCR. The specification for this input file matches the output of the conditional scripts for computing p-values, described below. 
@@ -73,6 +65,14 @@ Dependencies specific to those scripts are listed in the individual directories.
 3. This will take you to the Track Data Hubs pages, which has three tabs.  Select "Connected Hubs."
 4. Paste in https://cgl.gi.ucsc.edu/data/cactus/241-mammalian-2020v2-hub/hub.txt, and click "Add Hub."
 5. For obtaining the predictions in the future, go to https://genome.ucsc.edu/cgi-bin/hgGateway?genome=Homo_sapiens&hubUrl=https://cgl.gi.ucsc.edu/data/cactus/241-mammalian-2020v2-hub/hub.txt, where the genome= parameter can be replaced with other species.
+
+## Implementing steps 1-3 of figure 1 from Kaplow*, Lawler*, Schaffer*, _et al_., Science, 2023 (1):
+
+Step 1: For processing bulk open chromatin data, we used the ENCODE open chromatin pipeline (https://github.com/ENCODE-DCC/atac-seq-pipeline).  For processing single-cell ATAC-seq data (step 1), we used Archr (https://www.archrproject.com/).  We removed potential promoters (OCRs within 20kb of a protein-coding transcription start site), potential super-enhancers (OCRs longer than 1kb), and OCRs overlapping protein-coding exons.
+
+Step 2: For training machine learning models to use DNA sequence to predict open chromatin (step 2), we used keras (https://keras.io/).  Our machine learning models can be found at http://daphne.compbio.cs.cmu.edu/files/ikaplow/TACITSupplement/CNNs/.  The models for predicting brain open chromatin and the models for predicting liver open chromatin trained using only mouse sequences can be found at https://github.com/pfenninglab/OCROrthologPrediction/tree/main/models (brain model architechture: brainEnhancer_humanMouseMacaqueRat_euarchontaglireEnhLooseOrthNeg_500bp_conv5_architecture.json, brain model weights: brainEnhancer_humanMouseMacaqueRat_euarchontaglireEnhLooseOrthNeg_500bp_conv5.hdf5, liver model architecture: liverEnhancer_euarchontaglireEnhLooseOrthNeg_500bp_conv5_architecture.json, liver model weights: liverEnhancer_euarchontaglireEnhLooseOrthNeg_500bp_conv5.hdf5).  For comparing results to DeepSEA Beluga, we input our sequences into https://humanbase.net/deepsea/ with the Beluga model option.
+
+Step 3: For mapping OCR orthologs across species, we used halLiftover (https://github.com/ComparativeGenomicsToolkit/hal) followed by HALPER (https://github.com/pfenninglab/halLiftover-postprocessing).  For making predictions at orthologs we used predictNewSequencesNoEvaluation.py from https://github.com/pfenninglab/OCROrthologPrediction.
 
 ## Contact
 Daniel Schaffer (dschaffe@andrew.cmu.edu)
