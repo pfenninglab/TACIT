@@ -1,7 +1,7 @@
 # TACIT Enhancer-Phenotype Association
 Enhancer-Phenotype Association from Tissue-Aware Conservation Inference Toolkit.
 
-We used this with open chromatin regions (OCRs) / predictions of open chromatin status (1), but the pipeline is also amenable to predictions of other proxies for enhancer activity.  This pipeline begins with the step of TACIT for associating enhancer activity predictions with phenotypes (step 4 of Figure 1 from Kaplow*, Lawler*, Schaffer*, _et al_., Science, 2023 (1)) and continues through the end of the pipeline; an explanation of how to implement steps 1-3 can be found near the end of this README.
+We used this with open chromatin regions (OCRs) / predictions of open chromatin status (1), but the pipeline is also amenable to predictions of other proxies for enhancer activity.  This pipeline begins with the step of TACIT for associating enhancer activity predictions with phenotypes (step 4 of Figure 1 from Kaplow*, Lawler*, Schaffer*, _et al_., Science, 2023 (1)) and continues through the end of the pipeline; an explanation of how to implement steps 1-3 can be found near the end of this README, and details can be found in this document: https://docs.google.com/document/d/1_fVGWQ6UYhM4oBszjCu04upOu9MzQhwEzHoLJ1n2iYQ/edit?usp=sharing.
 
 This pipeline has been tested on Centos versions 7 and 8. However, we expect it to work on other distributions of Linux, MacOS, and Windows.
 
