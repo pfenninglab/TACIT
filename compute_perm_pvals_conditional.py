@@ -89,6 +89,6 @@ for i in range(len(names)):
     name = names[i]
     outFile.write(",".join([name, pvals[i], coeffs[i]]))
     trials = count_trials[name]
-    missing_trials = 10 ** max(4, ceil(log10(trials))) - trials
+    missing_trials = 10 ** max(3, ceil(log10(trials))) - trials
     outFile.write("," + str(lower_trials[name] / count_trials[name]) + "," + str(trials) + "," + str(missing_trials) + "\n")
 outFile.close()
