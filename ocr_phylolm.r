@@ -63,7 +63,7 @@ trait.forShuf = args[15]
 trait.col = args[15:length(args)]
 trait.all = traits[trait.col]
 if (length(args) == 15) {
-        # Convert trait.col into an array
+        # Convert trait.all into an array
         trait.all = as.matrix(trait.all)
 }
 trait.allForShuf = traits[[trait.forShuf]]
