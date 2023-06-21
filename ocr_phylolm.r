@@ -156,7 +156,6 @@ for (i in 0:max_iter) {
       # Other traits should be used as additional covariates
       for (j in 2:ncol(int.trait)) {
 	# Add the other traits as covariates
-	#int.preds = cbind(as.double(int.preds), int.trait[,j])
 	int.preds = cbind(as.double(int.preds), as.double(int.trait[,j]))
       }
     } else {

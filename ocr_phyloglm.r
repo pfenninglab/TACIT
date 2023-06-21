@@ -134,7 +134,6 @@ for (i in 0:max_iter) {
       # Other traits should be used as additional covariates
       for (j in 2:ncol(int.trait)) {
         # Add the other traits as covariates
-        #int.preds = cbind(as.double(int.preds), int.trait[,j])
         int.preds = cbind(as.double(int.preds), as.double(int.trait[,j]))
       }
     } else {
@@ -150,7 +149,7 @@ for (i in 0:max_iter) {
       }
       X = int.preds
       Y = int.trait[,1]
-      dat <- data.frame(X = X, Y = Y, row.names = int.species)
+      dat <- data.frame(X = X, Y = Y)#, row.names = int.species)
       m <- tryCatch(
         {
         phyloglm(Y ~ X, data = dat, phy=int.tree.di,  method = "logistic_MPLE")
@@ -165,7 +164,7 @@ for (i in 0:max_iter) {
         enh.names[index] = name
         m.coeff = summary(m)$coefficients
         p.vals[index] = m.coeff[8 + 3*(length(args) - 16)]
-        coeffs[index] = m.coeff[2:(length(args)-14)]
+        coeffs[index,] = m.coeff[2:(length(args)-14)]
         index = index + 1
       }
     }
