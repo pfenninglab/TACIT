@@ -45,7 +45,7 @@ coeffs = []
 coeffs_negative = {}
 for line in inFile:
     tokens = line.strip().replace("\"", "").split(",")
-    if len(tokens) == 3:
+    if len(tokens) >= 3:
         names.append(tokens[0])
         pvals.append(tokens[1])
         parsed_pvals[tokens[0]] = parseNum(tokens[1])
