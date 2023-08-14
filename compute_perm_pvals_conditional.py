@@ -42,6 +42,7 @@ pvals = []
 parsed_pvals = {}
 #corPvals = []
 coeffs = []
+additional_coeffs = []
 coeffs_negative = {}
 for line in inFile:
     tokens = line.strip().replace("\"", "").split(",")
@@ -52,6 +53,9 @@ for line in inFile:
         #corPvals.append(tokens[2])
         coeffs.append(tokens[2])
         coeffs_negative[tokens[0]] = tokens[2][0] == "-"
+        if len(tokens) > 3:
+            # Add the additional coefficients to a list
+            additional_coeffs.append(tokens[3:len(tokens)])
     else:
         print("Warning: The following line in the p-value file has an incorrect format")
         print(line)
@@ -88,6 +92,10 @@ outFile.write(new_header)
 for i in range(len(names)):
     name = names[i]
     outFile.write(",".join([name, pvals[i], coeffs[i]]))
+    if len(additional_coeffs) > 0:
+        # Record the additional coefficients
+        outFile.write(",")
+        outFile.write(",".join(additional_coeffs[i]))
     trials = count_trials[name]
     missing_trials = 10 ** max(3, ceil(log10(trials))) - trials
     outFile.write("," + str(lower_trials[name] / count_trials[name]) + "," + str(trials) + "," + str(missing_trials) + "\n")
