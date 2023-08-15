@@ -12,6 +12,7 @@
 #    S, random seed to use,
 #    path to directory containing fast_bin_perm.r
 #    column in phenotype file
+#    additional columns in phenotype file used in phyloglm (can be multiple, eliminate if considering only 1 phenotype)
 #E.g. if putput file "template" given is /path/to/foo.csv, output will be in (I,S as above) /path/to/foo_rI_S.csv
 #Template must end in .csv
 #Will apply phylolm to K permulations for OCRs on lines I, I+J, I+2J, ... until end of matrix is reached
@@ -28,14 +29,12 @@ tree <- read.tree(file = args[6]) #Change to read.nexus for a nexus-format tree
 
 #Read phenotype data
 traits = read.csv(file= args[9])
-#trait.forShuf = args[16]
 trait.col = args[16:length(args)]
 trait.all = traits[trait.col]
 if (length(args) == 16) {
-        # Convert trait.all into an array
-        trait.all = as.matrix(trait.all)
+  # Convert trait.all into an array
+  trait.all = as.matrix(trait.all)
 }
-#trait.allForShuf = traits[[trait.forShuf]]
 valid = c()
 for (i in 1:nrow(trait.all)) {
   # Iterate through the rows of the matrix and find those with no NAs
@@ -58,7 +57,6 @@ if (length(valid) == 0) {
   # No rows with values from all species
   print("Warning: No species with phenotype annotations for all phenotypes.")
 }
-#traitForShuf = trait.allForShuf[valid]
 species.spaces = traits$Species.Name[valid]
 trait.species = gsub(" ", "_", species.spaces)
 row.names(trait) = trait.species
@@ -73,7 +71,6 @@ if (length(pred.species)+1 != ncol(preds)) {
   print("Warning: Number of species names does not match number of species.")
 }
 names(preds)[2:(length(pred.species)+1)] = pred.species
-
 common.species = intersect(intersect(pred.species, tree$tip.label), trait.species)
 te = which(trait.species %in% common.species)
 tree.common = keep.tip(tree, common.species)
@@ -140,6 +137,7 @@ for (i in 0:max_iter) {
       # Convert int.preds into a double
       int.preds = as.double(int.preds)
     }
+
     for (f in 1:num_shuffles) {
       if (random) {
         fg.species.shuffled = fastSimBinPhenoVec(int.tree.di, tips=fg.leaf.count, fg.internal.count, rm=rate.matrix, leafBitMaps=leafMap)
@@ -149,14 +147,12 @@ for (i in 0:max_iter) {
       }
       X = int.preds
       Y = int.trait[,1]
-      dat <- data.frame(X = X, Y = Y)#, row.names = int.species)
+      dat <- data.frame(X = X, Y = Y)
       m <- tryCatch(
         {
         phyloglm(Y ~ X, data = dat, phy=int.tree.di,  method = "logistic_MPLE")
         },
         error=function(e) {
-          #message('An Error Occurred')
-          #print(e)
           print(name)
           return(NULL)
         })
