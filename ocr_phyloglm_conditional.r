@@ -62,7 +62,6 @@ if (length(valid) == 0) {
 species.spaces = traits$Species.Name[valid]
 trait.species = gsub(" ", "_", species.spaces)
 row.names(trait) = trait.species
-traitForShuf = trait[,1]
 
 #Read activity predictions
 preds = read.csv(file = args[7], header = F, sep = "\t")
@@ -114,8 +113,6 @@ for (i in 0:max_iter) {
     int.species = intersect(names(good.preds), common.species)
     l = length(int.species)
     int.trait = as.matrix(trait[int.species, ])
-    int.traitForShuf = traitForShuf[int.species]
-    sum.trait = sum(int.traitForShuf)
     int.preds = good.preds[int.species]
     int.tree = keep.tip(tree.common, int.species)
     int.tree.di = multi2di(int.tree)
@@ -125,8 +122,9 @@ for (i in 0:max_iter) {
     bg.species = names(int.trait[which(int.trait == 0)])
     fg.leaf.count = length(fg.species)
     fg.internal.count = countInternal(int.tree.di, leafMap, fg.species)
-    rate.matrix=ratematrix(int.tree.di, int.traitForShuf)
-    int.traitForShuf.real = int.traitForShuf
+    rate.matrix=ratematrix(int.tree.di, int.trait[,1])
+    print(rate.matrix)
+    int.traitForShuf.real = int.trait[,1]
     names(int.traitForShuf.real) = int.species
     if (length(args) > 16) {
       # Other traits should be used as additional covariates
@@ -139,15 +137,14 @@ for (i in 0:max_iter) {
       int.preds = as.double(int.preds)
     }
 
+    X = int.preds
     for (f in 1:num_shuffles) {
       repeat {
         fg.species.shuffled = fastSimBinPhenoVec(int.tree.di, tips=fg.leaf.count, fg.internal.count, rm=rate.matrix, leafBitMaps=leafMap)
-        int.trait[,1] = double(l)
-        names(int.trait) = int.species
-        int.trait[,1][fg.species.shuffled] = 1
-	X = int.preds
-	Y = int.trait[,1]
-        dat <- data.frame(Y=Y, X=X)
+        Y = double(l)
+	names(Y) = int.species
+	Y[fg.species.shuffled] = 1
+        dat <- data.frame(X=X, Y=Y, row.names = int.species)
 	m <- tryCatch(
           {
           phyloglm(Y ~ X, data = dat, phy=int.tree.di,  method = "logistic_MPLE")
