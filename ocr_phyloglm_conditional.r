@@ -99,13 +99,17 @@ for (i in 0:max_iter) {
     fg.leaf.count = length(fg.species)
     fg.internal.count = countInternal(int.tree.di, leafMap, fg.species)
     rate.matrix=ratematrix(int.tree.di, int.trait)
+    if (i == 0) {
+      print(int.tree.di)
+      print(fg.leaf.count)
+      print(fg.internal.count)
+      print(rate.matrix)
+      print(leafMap)
+    }
 
     for (f in 1:num_shuffles) {
       repeat {
         fg.species.shuffled = fastSimBinPhenoVec(int.tree.di, tips=fg.leaf.count, fg.internal.count, rm=rate.matrix, leafBitMaps=leafMap)
-    	if ((i == 1) && (f == 1)) {
-	  print(fg.species.shuffled)
-	}
         int.trait = double(l)
         names(int.trait) = int.species
         int.trait[fg.species.shuffled] = 1
