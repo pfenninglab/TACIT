@@ -103,12 +103,12 @@ for (i in 0:max_iter) {
     for (f in 1:num_shuffles) {
       repeat {
         fg.species.shuffled = fastSimBinPhenoVec(int.tree.di, tips=fg.leaf.count, fg.internal.count, rm=rate.matrix, leafBitMaps=leafMap)
+    	if ((i == 1) && (f == 1)) {
+	  print(fg.species.shuffled)
+	}
         int.trait = double(l)
         names(int.trait) = int.species
         int.trait[fg.species.shuffled] = 1
-	if (f == 1) {
-	  print(int.trait)
-	}
         dat <- data.frame(Y=int.trait, X=as.double(int.preds), row.names = int.species)
         m <- phyloglm(Y ~ X, data = dat, phy=int.tree.di,  method = "logistic_MPLE")
         m.coeff = summary(m)$coefficients
