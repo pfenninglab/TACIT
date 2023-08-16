@@ -30,7 +30,7 @@ tree <- read.tree(file = args[6]) #Change to read.nexus for a nexus-format tree
 
 #Read phenotype data
 traits = read.csv(file= args[9])
-trait.col = args[16::length(args)]
+trait.col = args[16:length(args)]
 trait.all = traits[trait.col]
 if (length(args) == 16) {
   # Convert trait.all into an array
@@ -125,8 +125,9 @@ for (i in 0:max_iter) {
     bg.species = names(int.trait[which(int.trait == 0)])
     fg.leaf.count = length(fg.species)
     fg.internal.count = countInternal(int.tree.di, leafMap, fg.species)
-    int.trait.real = int.trait[,1]
-    names(int.trait.real) = int.species
+    rate.matrix=ratematrix(int.tree.di, int.traitForShuf)
+    int.traitForShuf.real = int.traitForShuf
+    names(int.traitForShuf.real) = int.species
     if (length(args) > 16) {
       # Other traits should be used as additional covariates
       for (j in 2:ncol(int.trait)) {
@@ -138,17 +139,15 @@ for (i in 0:max_iter) {
       int.preds = as.double(int.preds)
     }
 
-    X = int.preds
-
     for (f in 1:num_shuffles) {
       repeat {
         fg.species.shuffled = fastSimBinPhenoVec(int.tree.di, tips=fg.leaf.count, fg.internal.count, rm=rate.matrix, leafBitMaps=leafMap)
         int.trait[,1] = double(l)
         names(int.trait) = int.species
         int.trait[,1][fg.species.shuffled] = 1
+	X = int.preds
 	Y = int.trait[,1]
         dat <- data.frame(Y=Y, X=X)
-        #m <- phyloglm(Y ~ X, data = dat, phy=int.tree.di,  method = "logistic_MPLE")
 	m <- tryCatch(
           {
           phyloglm(Y ~ X, data = dat, phy=int.tree.di,  method = "logistic_MPLE")
@@ -162,7 +161,7 @@ for (i in 0:max_iter) {
           if (sign(m.coeff[2]) == orig_coeff_sign) {
             enh.names[index] = name
             p.vals[index] = m.coeff[8 + 3*(length(args) - 16)]
-            coeffs[index,] = m.coeff[2:(length(args)-13)]
+            coeffs[index,] = m.coeff[2:(length(args)-14)]
             index = index + 1
             break
           }
@@ -180,5 +179,5 @@ for (i in 1:ncol(int.trait)) {
   # Iterate through the additional coefficients and add them to the data frame
   datOut = cbind(datOut, Coeff = coeffs[1:index-1,i])
 }
-write.csv(dat, sub(".csv", paste("_r", args[11], "_s", args[14], ".csv", sep=""),  args[10]), row.names = FALSE)
+write.csv(datOut, sub(".csv", paste("_r", args[11], "_s", args[14], ".csv", sep=""),  args[10]), row.names = FALSE)
 
