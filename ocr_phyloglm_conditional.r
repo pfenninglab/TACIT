@@ -99,13 +99,6 @@ for (i in 0:max_iter) {
     fg.leaf.count = length(fg.species)
     fg.internal.count = countInternal(int.tree.di, leafMap, fg.species)
     rate.matrix=ratematrix(int.tree.di, int.trait)
-    if (i == 0) {
-      print(int.tree.di)
-      print(fg.leaf.count)
-      print(fg.internal.count)
-      print(rate.matrix)
-      print(leafMap)
-    }
 
     for (f in 1:num_shuffles) {
       repeat {
