@@ -87,6 +87,7 @@ if (length(valid) == 0) {
 species.lower = traits$species.binomial[valid]
 trait.species = str_to_title(species.lower)
 row.names(trait) = trait.species
+traitForShuf = trait[,1]
 
 #Read activity predictions
 preds = read.csv(file = args[7], header = F, sep = "\t")
@@ -136,6 +137,7 @@ for (i in 0:max_iter) {
     int.species = intersect(names(good.preds), common.species)
     int.preds = good.preds[int.species]
     int.trait = as.matrix(trait[int.species, ])
+    int.traitForShuf = traitForShuf[int.species]
     int.tree = keep.tip(tree.common, int.species)
     int.tree.di = multi2di(int.tree)
     rate.matrix=ratematrix(int.tree.di, int.trait[,1])

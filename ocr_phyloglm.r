@@ -119,7 +119,7 @@ for (i in 0:max_iter) {
     int.tree.di = multi2di(int.tree)
     if (random) {
       leafMap=makeLeafMap(int.tree.di)
-      fg.species = names(int.traitForShuf[which(int.traitFoShuf == 1)])
+      fg.species = names(int.traitForShuf[which(int.traitForShuf == 1)])
       bg.species = names(int.traitForShuf[which(int.traitForShuf == 0)])
       fg.leaf.count = length(fg.species)
       fg.internal.count = countInternal(int.tree.di, leafMap, fg.species)
