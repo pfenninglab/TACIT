@@ -36,7 +36,7 @@ def leq(a, b):
 
 inFile = open(sys.argv[1], "r")
 
-new_header = inFile.readline().strip() + ",\"Exp_Pvalue\",\"Trials\",\"Missing_Trials\"\n" #Name, P-val, Coeff, Exp P-val, Trials
+new_header = inFile.readline().strip() + ",\"Exp_Pvalue\",\"Trials\",\"Missing_Trials\"\n" #Name, P-val, Coeff (can be multiple), Exp P-val, Trials, Missing_Trials
 names = []
 pvals = []
 parsed_pvals = {}
@@ -75,7 +75,6 @@ for i in range(nDir):
         header = inFile.readline().strip().replace("\"", "").split(",")
         column = header.index("Pvalue")
         column2 = header.index("Coeff")
-        #print(f)
         for line in inFile:
             tokens = line.strip().replace("\"", "").split(",")
             name = tokens[0]
@@ -86,7 +85,6 @@ for i in range(nDir):
             if leq(parseNum(pval), parsed_pvals[name]):
                 lower_trials[name] = lower_trials[name] + 1
         
-
 outFile = open(sys.argv[3+nDir], "w")
 outFile.write(new_header)
 for i in range(len(names)):
