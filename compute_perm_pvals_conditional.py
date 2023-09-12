@@ -36,22 +36,26 @@ def leq(a, b):
 
 inFile = open(sys.argv[1], "r")
 
-new_header = inFile.readline().strip() + ",\"Exp_Pvalue\",\"Trials\",\"Missing_Trials\"\n" #Name, P-val, Coeff, Exp P-val, Trials
+new_header = inFile.readline().strip() + ",\"Exp_Pvalue\",\"Trials\",\"Missing_Trials\"\n" #Name, P-val, Coeff (can be multiple), Exp P-val, Trials, Missing_Trials
 names = []
 pvals = []
 parsed_pvals = {}
 #corPvals = []
 coeffs = []
+additional_coeffs = []
 coeffs_negative = {}
 for line in inFile:
     tokens = line.strip().replace("\"", "").split(",")
-    if len(tokens) == 3:
+    if len(tokens) >= 3:
         names.append(tokens[0])
         pvals.append(tokens[1])
         parsed_pvals[tokens[0]] = parseNum(tokens[1])
         #corPvals.append(tokens[2])
         coeffs.append(tokens[2])
         coeffs_negative[tokens[0]] = tokens[2][0] == "-"
+        if len(tokens) > 3:
+            # Add the additional coefficients to a list
+            additional_coeffs.append(tokens[3:len(tokens)])
     else:
         print("Warning: The following line in the p-value file has an incorrect format")
         print(line)
@@ -71,7 +75,6 @@ for i in range(nDir):
         header = inFile.readline().strip().replace("\"", "").split(",")
         column = header.index("Pvalue")
         column2 = header.index("Coeff")
-        #print(f)
         for line in inFile:
             tokens = line.strip().replace("\"", "").split(",")
             name = tokens[0]
@@ -82,12 +85,15 @@ for i in range(nDir):
             if leq(parseNum(pval), parsed_pvals[name]):
                 lower_trials[name] = lower_trials[name] + 1
         
-
 outFile = open(sys.argv[3+nDir], "w")
 outFile.write(new_header)
 for i in range(len(names)):
     name = names[i]
     outFile.write(",".join([name, pvals[i], coeffs[i]]))
+    if len(additional_coeffs) > 0:
+        # Record the additional coefficients
+        outFile.write(",")
+        outFile.write(",".join(additional_coeffs[i]))
     trials = count_trials[name]
     missing_trials = 10 ** max(3, ceil(log10(trials))) - trials
     outFile.write("," + str(lower_trials[name] / count_trials[name]) + "," + str(trials) + "," + str(missing_trials) + "\n")
