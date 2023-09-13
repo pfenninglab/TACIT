@@ -32,6 +32,7 @@ _Input arguments (must be provided in order)_:
 8. K: number of permulations per OCR (0 for true data / no permulations, make > 0 only if not using additional rejection sampler for accepting only permulations that preserve the direction from phylolm/phyloglm as described below; will apply phylolm to K permulations for OCRs on lines I, I+J, I+2J, ... until end of matrix is reached)
 9. S: random seed to use
 10. name of column in phenotype file with phenotype
+11. (optional) name of column with phenotype that should be treated as a covariate (can be more than one)
 
 Example (submitted to slurm cluster in sbatch script): Rscript ocr_phylolm.r Zoonomia_ChrX_lessGC40_241species_30Consensus.tree cortex_ocrs_filtered_named.txt species.txt Zoonomia_phenotypes_12-14-21.csv BrainSizeResidMotorCortexPhylolmOut/motorCortex_brainSizeResid_results.csv ${SLURM_ARRAY_TASK_ID} 1 0 1 Brain.resid
                   
@@ -47,8 +48,9 @@ _Input arguments (must be provided in order)_:
 7. J: step size in predictions matrix
 8. file with columns OCR that contains OCR names and Missing_Trials that specifies how many permulations (K) to do for each OCR (csv file, can make by running `permulationList.py` on output from `compute_perm_pvals_conditional.py` below)
 9. S: random seed to use
-10. name of column in phenotype file with phenotype
-11. path to directory containing `fast_bin_perm.r` (not required if K=0)
+10. path to directory containing `fast_bin_perm.r` (not required if K=0)
+11. name of column in phenotype file with phenotype
+12. (optional) name of column with phenotype that should be treated as a covariate (can be more than one)
 
 Example (submitted to slurm cluster in sbatch script): Rscript ocr_phylolm_conditional.r Zoonomia_ChrX_lessGC40_241species_30Consensus.tree cortex_ocrs_filtered_named.txt species.txt Zoonomia_phenotypes_12-14-21.csv BrainSizeResidMotorCortexPhylolmPermulationsOut/motorCortex_brainSizeResid_results_round1.csv ${SLURM_ARRAY_TASK_ID} 1000 motorCortex_brainSizeResid_results_modified_peakList.csv 1 Brain.resid
 
@@ -155,15 +157,15 @@ Step 3: For mapping OCR orthologs across species, we used halLiftover (https://g
 
 
 ## Contact
-Daniel Schaffer (dschaffe@andrew.cmu.edu)
-
 Irene Kaplow (ikaplow@cs.cmu.edu)
+
+Daniel Schaffer (dschaffe@andrew.cmu.edu)
 
 Alyssa Lawler (alawler@andrew.cmu.edu)
 
-Chaitanya Srinivasan (csriniv1@andrew.cmu.edu)
-
 Heather Sestili (hharper@cmu.edu)
+
+Chaitanya Srinivasan (csriniv1@andrew.cmu.edu)
 
 Tianyu Lu (tianyul3@andrew.cmu.edu)
 
