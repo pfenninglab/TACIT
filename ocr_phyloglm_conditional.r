@@ -25,7 +25,6 @@ library(phylolm) #Phylogeny-corrected correlation
 args <- commandArgs()
 seed = as.integer(args[14])
 set.seed(seed)
-
 tree <- read.tree(file = args[6]) #Change to read.nexus for a nexus-format tree
 
 #Read phenotype data
