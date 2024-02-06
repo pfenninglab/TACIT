@@ -136,6 +136,8 @@ evaluationScriptsEnhancerPhenotypeAssociations: scripts for evaluating and analy
 
 evaluationScriptsHiC: scripts for evaluating long-range interactions between phenotype-associated open chromatin regions and phenotype-relevant genes
 
+evaluationScriptsVocalLearning: scripts for evaluating associations between open chromatin regions and vocal learning and integrating results with gene-vocal learning associations
+
 Dependencies specific to those scripts are listed in the individual directories.  Models can be found at http://daphne.compbio.cs.cmu.edu/files/ikaplow/TACITSupplement/.
 
 
