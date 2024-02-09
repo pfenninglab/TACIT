@@ -1,0 +1,472 @@
+TaxonGroup,Hiller_IDs (filtered set),Hiller_IDs (full set),Hiller_IDs (genome IDs),Assembly_IDs,Species binomials,Species binomials (adjusted)
+Glires,vs_HLlepAme1,vs_HLlepAme1,HLlepAme1,GCA_004026855.1,Lepus americanus,lepus americanus
+Glires,vs_HLoryCunCun4,vs_HLoryCunCun4,HLoryCunCun4,GCA_013371645.1,Oryctolagus cuniculus cuniculus,oryctolagus cuniculus cuniculus
+Glires,vs_ochPri3,vs_ochPri3,ochPri3,GCF_000292845.1,Ochotona princeps,ochotona princeps
+Glires,vs_HLcasCan3,vs_HLcasCan3,HLcasCan3,DNA Zoo Consortium,Castor canadensis,castor canadensis
+Glires,vs_dipOrd2,vs_dipOrd2,dipOrd2,GCF_000151885.1,Dipodomys ordii,dipodomys ordii
+Glires,vs_HLdipSte1,vs_HLdipSte1,HLdipSte1,GCA_004024685.1,Dipodomys stephensi,dipodomys stephensi
+Glires,vs_HLperLonPac1,vs_HLperLonPac1,HLperLonPac1,GCA_004363475.1,Perognathus longimembris pacificus,perognathus longimembris pacificus
+Glires,vs_HLfukDam2,vs_HLfukDam2,HLfukDam2,GCF_012274545.1,Fukomys damarensis,fukomys damarensis
+Glires,vs_hetGla2,vs_hetGla2,hetGla2,GCF_000247695.1,Heterocephalus glaber,heterocephalus glaber
+Glires,vs_cavApe1,vs_cavApe1,cavApe1,GCA_000688575.1,Cavia aperea,cavia aperea
+Glires,vs_cavPor3,vs_cavPor3,cavPor3,GCF_000151735.1,Cavia porcellus,cavia porcellus
+Glires,vs_HLcavTsc1,vs_HLcavTsc1,HLcavTsc1,GCA_004027695.1,Cavia tschudii,cavia tschudii
+Glires,vs_HLdolPat1,vs_HLdolPat1,HLdolPat1,GCA_004027295.1,Dolichotis patagonum,dolichotis patagonum
+Glires,vs_chiLan1,vs_chiLan1,chiLan1,GCF_000276665.1,Chinchilla lanigera,chinchilla lanigera
+Glires,vs_HLcteGun1,vs_HLcteGun1,HLcteGun1,GCA_004027205.1,Ctenodactylus gundi,ctenodactylus gundi
+Glires,vs_HLcteSoc1,vs_HLcteSoc1,HLcteSoc1,GCA_004027165.1,Ctenomys sociabilis,ctenomys sociabilis
+Glires,vs_HLdasPun1,vs_HLdasPun1,HLdasPun1,GCA_004363535.1,Dasyprocta punctata,dasyprocta punctata
+Glires,vs_HLdinBra1,vs_HLdinBra1,HLdinBra1,GCA_004027595.1,Dinomys branickii,dinomys branickii
+Glires,vs_HLhydHyd1,vs_HLhydHyd1,HLhydHyd1,GCA_004027455.1,Hydrochoerus hydrochaeris,hydrochoerus hydrochaeris
+Glires,vs_HLhysCri1,vs_HLhysCri1,HLhysCri1,GCA_004026905.1,Hystrix cristata,hystrix cristata
+Glires,vs_HLmyoCoy1,vs_HLmyoCoy1,HLmyoCoy1,GCA_004027025.1,Myocastor coypus,myocastor coypus
+Glires,vs_octDeg1,vs_octDeg1,octDeg1,GCF_000260255.1,Octodon degus,octodon degus
+Glires,vs_HLpetTyp1,vs_HLpetTyp1,HLpetTyp1,GCA_004026965.1,Petromus typicus,petromus typicus
+Glires,vs_HLthrSwi1,vs_HLthrSwi1,HLthrSwi1,GCA_004025085.1,Thryonomys swinderianus,thryonomys swinderianus
+Glires,vs_HLallBul1,vs_HLallBul1,HLallBul1,GCA_004027895.1,Allactaga bullata,allactaga bullata
+Glires,vs_jacJac1,vs_jacJac1,jacJac1,GCF_000280705.1,Jaculus jaculus,jaculus jaculus
+Glires,vs_HLzapHud1,vs_HLzapHud1,HLzapHud1,GCA_004024765.1,Zapus hudsonius,zapus hudsonius
+Glires,vs_HLellLut1,vs_HLellLut1,HLellLut1,GCA_001685075.1,Ellobius lutescens,ellobius lutescens
+Glires,vs_HLellTal1,vs_HLellTal1,HLellTal1,GCA_001685095.1,Ellobius talpinus,ellobius talpinus
+Glires,vs_micOch1,vs_micOch1,micOch1,GCF_000317375.1,Microtus ochrogaster,microtus ochrogaster
+Glires,vs_HLondZib1,vs_HLondZib1,HLondZib1,GCA_004026605.1,Ondatra zibethicus,ondatra zibethicus
+Glires,vs_HLcriGri3,vs_HLcriGri3,HLcriGri3,GCF_003668045.1,Cricetulus griseus,cricetulus griseus
+Glires,vs_mesAur1,vs_mesAur1,mesAur1,GCF_000349665.1,Mesocricetus auratus,mesocricetus auratus
+Glires,vs_HLonyTor1,vs_HLonyTor1,HLonyTor1,GCA_903995425.1,Onychomys torridus,onychomys torridus
+Glires,vs_HLperManBai2,vs_HLperManBai2,HLperManBai2,GCA_003704035.1,Peromyscus maniculatus bairdii,peromyscus maniculatus bairdii
+Glires,vs_HLsigHis1,vs_HLsigHis1,HLsigHis1,GCA_004025045.1,Sigmodon hispidus,sigmodon hispidus
+Glires,vs_HLacoCah1,vs_HLacoCah1,HLacoCah1,GCA_004027535.1,Acomys cahirinus,acomys cahirinus
+Glires,vs_HLmerUng1,vs_HLmerUng1,HLmerUng1,GCF_002204375.1,Meriones unguiculatus,meriones unguiculatus
+Glires,vs_HLpsaObe1,vs_HLpsaObe1,HLpsaObe1,GCA_002215935.2,Psammomys obesus,psammomys obesus
+Glires,vs_HLmusPah1,vs_HLmusPah1,HLmusPah1,GCF_900095145.1,Mus pahari,mus pahari
+Glires,vs_HLmusCar1,vs_HLmusCar1,HLmusCar1,GCF_900094665.1,Mus caroli,mus caroli
+Glires,vs_mm39,vs_mm39,mm39,GCF_000001635.27,Mus musculus,mus musculus
+Glires,vs_HLmusSpr1,vs_HLmusSpr1,HLmusSpr1,GCA_001624865.1,Mus spretus,mus spretus
+Glires,vs_HLratNor7,vs_HLratNor7,HLratNor7,GCA_015227675.1,Rattus norvegicus,rattus norvegicus
+Glires,vs_HLcriGam1,vs_HLcriGam1,HLcriGam1,GCA_004027575.1,Cricetomys gambianus,cricetomys gambianus
+Glires,vs_nanGal1,vs_nanGal1,nanGal1,GCF_000622305.1,Nannospalax galili,nannospalax galili
+Glires,vs_HLaplRuf1,vs_HLaplRuf1,HLaplRuf1,GCA_004027875.1,Aplodontia rufa,aplodontia rufa
+Glires,vs_HLgliGli1,vs_HLgliGli1,HLgliGli1,GCA_004027185.1,Glis glis,glis glis
+Glires,vs_HLgraMur1,vs_HLgraMur1,HLgraMur1,GCA_004027655.1,Graphiurus murinus,graphiurus murinus
+Glires,vs_HLmusAve1,vs_HLmusAve1,HLmusAve1,GCA_004027005.1,Muscardinus avellanarius,muscardinus avellanarius
+Glires,vs_speTri2,vs_speTri2,speTri2,GCF_000236235.1,Ictidomys tridecemlineatus,ictidomys tridecemlineatus
+Glires,vs_HLmarMar1,vs_HLmarMar1,HLmarMar1,GCF_001458135.1,Marmota marmota marmota,marmota marmota marmota
+Glires,vs_HLspeDau1,vs_HLspeDau1,HLspeDau1,GCA_002406435.1,Spermophilus dauricus,spermophilus dauricus
+Glires,vs_HLxerIna1,vs_HLxerIna1,HLxerIna1,GCA_004024805.1,Xerus inauris,xerus inauris
+Euarchonta,vs_cerAty1,vs_cerAty1,cerAty1,GCF_000955945.1,Cercocebus atys,cercocebus atys
+Euarchonta,vs_HLcerNeg1,vs_HLcerNeg1,HLcerNeg1,GCA_004027615.1,Cercopithecus neglectus,cercopithecus neglectus
+Euarchonta,vs_chlSab2,vs_chlSab2,chlSab2,GCF_000409795.2,Chlorocebus sabaeus,chlorocebus sabaeus
+Euarchonta,vs_HLeryPat1,vs_HLeryPat1,HLeryPat1,GCA_004027335.1,Erythrocebus patas,erythrocebus patas
+Euarchonta,vs_HLmacFas6,vs_HLmacFas6,HLmacFas6,GCA_012559485.1,Macaca fascicularis,macaca fascicularis
+Euarchonta,vs_rheMac10,vs_rheMac10,rheMac10,GCF_003339765.1,Macaca mulatta,macaca mulatta
+Euarchonta,vs_macNem1,vs_macNem1,macNem1,GCF_000956065.1,Macaca nemestrina,macaca nemestrina
+Euarchonta,vs_manLeu1,vs_manLeu1,manLeu1,GCF_000951045.1,Mandrillus leucophaeus,mandrillus leucophaeus
+Euarchonta,vs_HLpapAnu5,vs_HLpapAnu5,HLpapAnu5,GCF_008728515.1,Papio anubis,papio anubis
+Euarchonta,vs_colAng1,vs_colAng1,colAng1,GCF_000951035.1,Colobus angolensis palliatus,colobus angolensis palliatus
+Euarchonta,vs_nasLar1,vs_nasLar1,nasLar1,GCA_000772465.1,Nasalis larvatus,nasalis larvatus
+Euarchonta,vs_HLpilTep2,vs_HLpilTep2,HLpilTep2,GCF_002776525.3,Piliocolobus tephrosceles,piliocolobus tephrosceles
+Euarchonta,vs_HLpygNem1,vs_HLpygNem1,HLpygNem1,GCA_004024825.1,Pygathrix nemaeus,pygathrix nemaeus
+Euarchonta,vs_rhiBie1,vs_rhiBie1,rhiBie1,GCF_001698545.1,Rhinopithecus bieti,rhinopithecus bieti
+Euarchonta,vs_HLrhiRox2,vs_HLrhiRox2,HLrhiRox2,GCF_007565055.1,Rhinopithecus roxellana,rhinopithecus roxellana
+Euarchonta,vs_HLsemEnt1,vs_HLsemEnt1,HLsemEnt1,GCA_004025065.1,Semnopithecus entellus,semnopithecus entellus
+Euarchonta,vs_gorGor6,vs_gorGor6,gorGor6,GCF_008122165.1,Gorilla gorilla gorilla,gorilla gorilla gorilla
+Euarchonta,REFERENCE,REFERENCE,hg38,GCF_000001405.38,Homo sapiens,homo sapiens
+Euarchonta,vs_panPan3,vs_panPan3,panPan3,GCF_013052645.1,Pan paniscus,pan paniscus
+Euarchonta,vs_panTro6,vs_panTro6,panTro6,GCF_002880755.1,Pan troglodytes,pan troglodytes
+Euarchonta,vs_ponAbe3,vs_ponAbe3,ponAbe3,GCF_002880775.1,Pongo abelii,pongo abelii
+Euarchonta,vs_HLnomLeu4,vs_HLnomLeu4,HLnomLeu4,GCF_006542625.1,Nomascus leucogenys,nomascus leucogenys
+Euarchonta,vs_aotNan1,vs_aotNan1,aotNan1,GCF_000952055.2,Aotus nancymaae,aotus nancymaae
+Euarchonta,vs_HLaloPal1,vs_HLaloPal1,HLaloPal1,GCA_004027835.1,Alouatta palliata,alouatta palliata
+Euarchonta,vs_HLateGeo1,vs_HLateGeo1,HLateGeo1,GCA_004024785.1,Ateles geoffroyi,ateles geoffroyi
+Euarchonta,vs_HLcalJac4,vs_HLcalJac4,HLcalJac4,GCA_011100555.1,Callithrix jacchus,callithrix jacchus
+Euarchonta,vs_HLsagImp1,vs_HLsagImp1,HLsagImp1,GCA_004024885.1,Saguinus imperator,saguinus imperator
+Euarchonta,vs_HLcebAlb1,vs_HLcebAlb1,HLcebAlb1,GCA_004027755.1,Cebus albifrons,cebus albifrons
+Euarchonta,vs_cebCap1,vs_cebCap1,cebCap1,GCF_001604975.1,Cebus capucinus imitator,cebus capucinus imitator
+Euarchonta,vs_HLsaiBol1,vs_HLsaiBol1,HLsaiBol1,DNA Zoo Consortium,Saimiri boliviensis,saimiri boliviensis
+Euarchonta,vs_HLpitPit1,vs_HLpitPit1,HLpitPit1,GCA_004026645.1,Pithecia pithecia,pithecia pithecia
+Euarchonta,vs_HLdauMad1,vs_HLdauMad1,HLdauMad1,GCA_004027145.1,Daubentonia madagascariensis,daubentonia madagascariensis
+Euarchonta,vs_HLcheMed1,vs_HLcheMed1,HLcheMed1,GCA_008086735.1,Cheirogaleus medius,cheirogaleus medius
+Euarchonta,vs_micMur3,vs_micMur3,micMur3,GCF_000165445.2,Microcebus murinus,microcebus murinus
+Euarchonta,vs_HLmirCoq1,vs_HLmirCoq1,HLmirCoq1,GCA_004024645.1,Mirza coquereli,mirza coquereli
+Euarchonta,vs_HLindInd1,vs_HLindInd1,HLindInd1,GCA_004363605.1,Indri indri,indri indri
+Euarchonta,vs_proCoq1,vs_proCoq1,proCoq1,GCF_000956105.1,Propithecus coquereli,propithecus coquereli
+Euarchonta,vs_HLeulFla1,vs_HLeulFla1,HLeulFla1,DNA Zoo Consortium,Eulemur flavifrons,eulemur flavifrons
+Euarchonta,vs_HLeulFul1,vs_HLeulFul1,HLeulFul1,GCA_004027275.1,Eulemur fulvus,eulemur fulvus
+Euarchonta,vs_HLlemCat1,vs_HLlemCat1,HLlemCat1,GCA_004024665.1,Lemur catta,lemur catta
+Euarchonta,vs_otoGar3,vs_otoGar3,otoGar3,GCF_000181295.1,Otolemur garnettii,otolemur garnettii
+Euarchonta,vs_HLnycCou1,vs_HLnycCou1,HLnycCou1,GCA_004027815.1,Nycticebus coucang,nycticebus coucang
+Euarchonta,vs_tupChi1,vs_tupChi1,tupChi1,GCF_000334495.1,Tupaia chinensis,tupaia chinensis
+Laurasiatheria,vs_HLantAme1,vs_HLantAme1,HLantAme1,GCA_007570785.1,Antilocapra americana,antilocapra americana
+Laurasiatheria,vs_HLbeaHun1,vs_HLbeaHun1,HLbeaHun1,GCA_004027495.1,Beatragus hunteri,beatragus hunteri
+Laurasiatheria,vs_panHod1,vs_panHod1,panHod1,GCF_000400835.1,Pantholops hodgsonii,pantholops hodgsonii
+Laurasiatheria,vs_HLsaiTat1,vs_HLsaiTat1,HLsaiTat1,GCA_004024985.1,Saiga tatarica,saiga tatarica
+Laurasiatheria,vs_bisBis1,vs_bisBis1,bisBis1,GCF_000754665.1,Bison bison bison,bison bison bison
+Laurasiatheria,vs_HLbosInd2,vs_HLbosInd2,HLbosInd2,GCA_002933975.1,Bos indicus,bos indicus
+Laurasiatheria,vs_HLbosMut2,vs_HLbosMut2,HLbosMut2,GCA_007646595.3,Bos mutus,bos mutus
+Laurasiatheria,vs_bosTau9,vs_bosTau9,bosTau9,GCF_002263795.1,Bos taurus,bos taurus
+Laurasiatheria,vs_HLbubBub2,vs_HLbubBub2,HLbubBub2,GCF_003121395.1,Bubalus bubalis,bubalus bubalis
+Laurasiatheria,vs_HLammLer1,vs_HLammLer1,HLammLer1,GCA_002201775.1,Ammotragus lervia,ammotragus lervia
+Laurasiatheria,vs_HLcapAeg1,vs_HLcapAeg1,HLcapAeg1,GCA_000765075.1,Capra aegagrus,capra aegagrus
+Laurasiatheria,vs_HLcapHir2,vs_HLcapHir2,HLcapHir2,GCF_001704415.1,Capra hircus,capra hircus
+Laurasiatheria,vs_HLhemHyl1,vs_HLhemHyl1,HLhemHyl1,GCA_004026825.1,Hemitragus hylocrius,hemitragus hylocrius
+Laurasiatheria,vs_HLoviAri5,vs_HLoviAri5,HLoviAri5,GCA_011170295.1,Ovis aries,ovis aries
+Laurasiatheria,vs_HLoviCan2,vs_HLoviCan2,HLoviCan2,GCA_004026945.1,Ovis canadensis,ovis canadensis
+Laurasiatheria,vs_HLelaDav1,vs_HLelaDav1,HLelaDav1,GCA_002443075.1,Elaphurus davidianus,elaphurus davidianus
+Laurasiatheria,vs_HLodoVir3,vs_HLodoVir3,HLodoVir3,GCA_014726795.1,Odocoileus virginianus,odocoileus virginianus
+Laurasiatheria,vs_HLranTar1,vs_HLranTar1,HLranTar1,GCA_004026565.1,Rangifer tarandus,rangifer tarandus
+Laurasiatheria,vs_HLgirTip1,vs_HLgirTip1,HLgirTip1,GCA_001651235.1,Giraffa tippelskirchi,giraffa tippelskirchi
+Laurasiatheria,vs_HLokaJoh2,vs_HLokaJoh2,HLokaJoh2,DNA Zoo Consortium,Okapia johnstoni,okapia johnstoni
+Laurasiatheria,vs_HLmosMos1,vs_HLmosMos1,HLmosMos1,GCA_004024705.2,Moschus moschiferus,moschus moschiferus
+Laurasiatheria,vs_HLtraJav1,vs_HLtraJav1,HLtraJav1,GCA_004024965.2,Tragulus javanicus,tragulus javanicus
+Laurasiatheria,vs_susScr11,vs_susScr11,susScr11,GCF_000003025.6,Sus scrofa,sus scrofa
+Laurasiatheria,vs_HLcatWag1,vs_HLcatWag1,HLcatWag1,GCA_004024745.2,Catagonus wagneri,catagonus wagneri
+Laurasiatheria,vs_HLcamBac1,vs_HLcamBac1,HLcamBac1,GCF_000767855.1,Camelus bactrianus,camelus bactrianus
+Laurasiatheria,vs_HLcamDro2,vs_HLcamDro2,HLcamDro2,GCF_000803125.2,Camelus dromedarius,camelus dromedarius
+Laurasiatheria,vs_HLcamFer3,vs_HLcamFer3,HLcamFer3,GCF_009834535.1,Camelus ferus,camelus ferus
+Laurasiatheria,vs_vicPac2,vs_vicPac2,vicPac2,GCF_000164845.1,Vicugna pacos,vicugna pacos
+Cetaceans,vs_HLeubJap1,vs_HLeubJap1,HLeubJap1,GCA_004363455.1,Eubalaena japonica,eubalaena japonica
+Cetaceans,vs_HLbalBon1,vs_HLbalBon1,HLbalBon1,GCA_000978805.1,Balaenoptera bonaerensis,balaenoptera bonaerensis
+Cetaceans,vs_balAcu1,vs_balAcu1,balAcu1,GCF_000493695.1,Balaenoptera acutorostrata scammoni,balaenoptera acutorostrata scammoni
+Cetaceans,vs_HLescRob1,vs_HLescRob1,HLescRob1,GCA_004363415.1,Eschrichtius robustus,eschrichtius robustus
+Cetaceans,vs_orcOrc1,vs_orcOrc1,orcOrc1,GCF_000331955.2,Orcinus orca,orcinus orca
+Cetaceans,vs_HLturTru4,vs_HLturTru4,HLturTru4,GCF_011762595.1,Tursiops truncatus,tursiops truncatus
+Cetaceans,vs_HLlniGeo1,vs_HLlniGeo1,HLlniGeo1,GCA_004363515.1,Inia geoffrensis,inia geoffrensis
+Cetaceans,vs_lipVex1,vs_lipVex1,lipVex1,GCF_000442215.1,Lipotes vexillifer,lipotes vexillifer
+Cetaceans,vs_HLdelLeu2,vs_HLdelLeu2,HLdelLeu2,GCF_002288925.2,Delphinapterus leucas,delphinapterus leucas
+Cetaceans,vs_HLmonMon2,vs_HLmonMon2,HLmonMon2,JoanaDamasHarrisLewin,Monodon monoceros,monodon monoceros
+Cetaceans,vs_HLneoAsi1,vs_HLneoAsi1,HLneoAsi1,GCF_003031525.1,Neophocaena asiaeorientalis asiaeorientalis,neophocaena asiaeorientalis asiaeorientalis
+Cetaceans,vs_HLphoPho2,vs_HLphoPho2,HLphoPho2,DNA Zoo Consortium,Phocoena phocoena,phocoena phocoena
+Cetaceans,vs_HLkogBre1,vs_HLkogBre1,HLkogBre1,GCA_004363705.1,Kogia breviceps,kogia breviceps
+Cetaceans,vs_HLmesBid1,vs_HLmesBid1,HLmesBid1,GCA_004027085.1,Mesoplodon bidens,mesoplodon bidens
+Laurasiatheria,vs_HLzipCav1,vs_HLzipCav1,HLzipCav1,GCA_004364475.1,Ziphius cavirostris,ziphius cavirostris
+Laurasiatheria,vs_HLailFul2,vs_HLailFul2,HLailFul2,DNA Zoo Consortium,Ailurus fulgens,ailurus fulgens
+Laurasiatheria,vs_canFam4,vs_canFam4,canFam4,GCA_011100685.1,Canis lupus familiaris,canis lupus familiaris
+Laurasiatheria,vs_HLlycPic3,vs_HLlycPic3,HLlycPic3,DNA Zoo Consortium,Lycaon pictus,lycaon pictus
+Laurasiatheria,vs_HLvulLag1,vs_HLvulLag1,HLvulLag1,GCA_004023825.1,Vulpes lagopus,vulpes lagopus
+Laurasiatheria,vs_HLspiGra1,vs_HLspiGra1,HLspiGra1,GCA_004023965.1,Spilogale gracilis,spilogale gracilis
+Laurasiatheria,vs_HLpteBra2,vs_HLpteBra2,HLpteBra2,DNA Zoo Consortium,Pteronura brasiliensis,pteronura brasiliensis
+Laurasiatheria,vs_HLmelCap1,vs_HLmelCap1,HLmelCap1,GCA_004024625.1,Mellivora capensis,mellivora capensis
+Laurasiatheria,vs_HLmusPut2,vs_HLmusFur2,HLmusFur2,GCA_011764305.1,Mustela putorius furo,mustela putorius furo
+Pinniped,vs_HLodoRos1,vs_HLodoRos1,HLodoRos1,DNA Zoo Consortium,Odobenus rosmarus,odobenus rosmarus
+Pinniped,vs_HLzalCal1,vs_HLzalCal1,HLzalCal1,GCA_009762305.1,Zalophus californianus,zalophus californianus
+Pinniped,vs_lepWed1,vs_lepWed1,lepWed1,GCF_000349705.1,Leptonychotes weddellii,leptonychotes weddellii
+Pinniped,vs_HLmirAng2,vs_HLmirAng2,HLmirAng2,DNA Zoo Consortium,Mirounga angustirostris,mirounga angustirostris
+Pinniped,vs_neoSch1,vs_neoSch1,neoSch1,GCF_002201575.1,Neomonachus schauinslandi,neomonachus schauinslandi
+Laurasiatheria,vs_HLailMel2,vs_HLailMel2,HLailMel2,GCF_002007445.1,Ailuropoda melanoleuca,ailuropoda melanoleuca
+Laurasiatheria,vs_ursMar1,vs_ursMar1,ursMar1,GCF_000687225.1,Ursus maritimus,ursus maritimus
+Laurasiatheria,vs_HLcryFer2,vs_HLcryFer2,HLcryFer2,DNA Zoo Consortium,Cryptoprocta ferox,cryptoprocta ferox
+Laurasiatheria,vs_HLaciJub2,vs_HLaciJub2,HLaciJub2,GCF_003709585.1,Acinonyx jubatus,acinonyx jubatus
+Laurasiatheria,vs_felCat9,vs_felCat9,felCat9,GCF_000181335.3,Felis catus,felis catus
+Laurasiatheria,vs_HLfelNig1,vs_HLfelNig1,HLfelNig1,GCA_004023925.1,Felis nigripes,felis nigripes
+Laurasiatheria,vs_HLpumCon1,vs_HLpumCon1,HLpumCon1,GCF_003327715.1,Puma concolor,puma concolor
+Laurasiatheria,vs_HLpanOnc2,vs_HLpanOnc2,HLpanOnc2,DNA Zoo Consortium,Panthera onca,panthera onca
+Laurasiatheria,vs_HLpanPar1,vs_HLpanPar1,HLpanPar1,GCF_001857705.1,Panthera pardus,panthera pardus
+Laurasiatheria,vs_panTig1,vs_panTig1,panTig1,GCF_000464555.1,Panthera tigris altaica,panthera tigris altaica
+Laurasiatheria,vs_HLhelPar1,vs_HLhelPar1,HLhelPar1,GCA_004023845.1,Helogale parvula,helogale parvula
+Laurasiatheria,vs_HLmunMug1,vs_HLmunMug1,HLmunMug1,GCA_004023785.1,Mungos mungo,mungos mungo
+Laurasiatheria,vs_HLsurSur1,vs_HLsurSur1,HLsurSur1,GCF_006229205.1,Suricata suricatta,suricata suricatta
+Laurasiatheria,vs_HLhyaHya1,vs_HLhyaHya1,HLhyaHya1,GCA_003009895.1,Hyaena hyaena,hyaena hyaena
+Laurasiatheria,vs_HLparHer1,vs_HLparHer1,HLparHer1,GCA_004024585.1,Paradoxurus hermaphroditus,paradoxurus hermaphroditus
+Bat,vs_HLmacSob1,vs_HLmacSob1,HLmacSob1,GCA_004027375.1,Macroglossus sobrinus,macroglossus sobrinus
+Bat,vs_HLeidHel2,vs_HLeidHel2,HLeidHel2,DNA Zoo Consortium,Eidolon helvum,eidolon helvum
+Bat,vs_pteAle1,vs_pteAle1,pteAle1,GCF_000325575.1,Pteropus alecto,pteropus alecto
+Bat,vs_HLpteVam2,vs_HLpteVam2,HLpteVam2,GCF_000151845.1,Pteropus vampyrus,pteropus vampyrus
+Bat,vs_HLrouAeg4,vs_HLrouAeg4,HLrouAeg4,Bat1K,Rousettus aegyptiacus,rousettus aegyptiacus
+Bat,vs_HLcraTho1,vs_HLcraTho1,HLcraTho1,GCA_004027555.1,Craseonycteris thonglongyai,craseonycteris thonglongyai
+Bat,vs_HLhipArm1,vs_HLhipArm1,HLhipArm1,GCF_001890085.1,Hipposideros armiger,hipposideros armiger
+Bat,vs_HLhipGal1,vs_HLhipGal1,HLhipGal1,GCA_004027415.1,Hipposideros galeritus,hipposideros galeritus
+Bat,vs_HLmegLyr2,vs_HLmegLyr2,HLmegLyr2,GCA_004026885.1,Megaderma lyra,megaderma lyra
+Bat,vs_HLtadBra1,vs_HLtadBra1,HLtadBra1,GCA_004025005.1,Tadarida brasiliensis,tadarida brasiliensis
+Bat,vs_HLmorBla1,vs_HLmorBla1,HLmorBla1,GCA_004026545.1,Mormoops blainvillei,mormoops blainvillei
+Bat,vs_ptePar1,vs_ptePar1,ptePar1,GCA_000465405.1,Pteronotus parnellii,pteronotus parnellii
+Bat,vs_HLnocLep1,vs_HLnocLep1,HLnocLep1,GCA_004026585.1,Noctilio leporinus,noctilio leporinus
+Bat,vs_HLcarPer3,vs_HLcarPer3,HLcarPer3,GCA_004027735.1,Carollia perspicillata,carollia perspicillata
+Bat,vs_HLdesRot2,vs_HLdesRot2,HLdesRot2,https://sid.erda.dk/share_redirect/gBu4tuc7qz/Dovetail_v2/vampire_bat_10Aug2015_WXtkA.fasta,Desmodus rotundus,desmodus rotundus
+Bat,vs_HLanoCau1,vs_HLanoCau1,HLanoCau1,GCA_004027475.1,Anoura caudifer,anoura caudifer
+Bat,vs_HLmicHir1,vs_HLmicHir1,HLmicHir1,GCA_004026765.1,Micronycteris hirsuta,micronycteris hirsuta
+Bat,vs_HLtonSau1,vs_HLtonSau1,HLtonSau1,GCA_004024845.1,Tonatia saurophila,tonatia saurophila
+Bat,vs_HLartJam2,vs_HLartJam2,HLartJam2,GCA_014825515.1,Artibeus jamaicensis,artibeus jamaicensis
+Bat,vs_HLrhiSin1,vs_HLrhiSin1,HLrhiSin1,GCF_001888835.1,Rhinolophus sinicus,rhinolophus sinicus
+Bat,vs_eptFus1,vs_eptFus1,eptFus1,GCF_000308155.1,Eptesicus fuscus,eptesicus fuscus
+Bat,vs_HLlasBor1,vs_HLlasBor1,HLlasBor1,GCA_004026805.1,Lasiurus borealis,lasiurus borealis
+Bat,vs_HLminNat1,vs_HLminNat1,HLminNat1,GCF_001595765.1,Miniopterus natalensis,miniopterus natalensis
+Bat,vs_HLminSch1,vs_HLminSch1,HLminSch1,GCA_004026525.1,Miniopterus schreibersii,miniopterus schreibersii
+Bat,vs_HLmurAurFea1,vs_HLmurAurFea1,HLmurAurFea1,GCA_004026665.1,Murina aurata feae,murina aurata feae
+Bat,vs_myoBra1,vs_myoBra1,myoBra1,GCF_000412655.1,Myotis brandtii,myotis brandtii
+Bat,vs_myoDav1,vs_myoDav1,myoDav1,GCF_000327345.1,Myotis davidii,myotis davidii
+Bat,vs_HLmyoLuc1,vs_HLmyoLuc1,HLmyoLuc1,DNA Zoo Consortium,Myotis lucifugus,myotis lucifugus
+Bat,vs_HLmyoMyo6,vs_HLmyoMyo6,HLmyoMyo6,Bat1K,Myotis myotis,myotis myotis
+Bat,vs_HLpipPip2,vs_HLpipPip2,HLpipPip2,GCA_903992545.1,Pipistrellus pipistrellus,pipistrellus pipistrellus
+Laurasiatheria,vs_eriEur2,vs_eriEur2,eriEur2,GCF_000296755.1,Erinaceus europaeus,erinaceus europaeus
+Laurasiatheria,vs_HLsolPar1,vs_HLsolPar1,HLsolPar1,GCA_004363575.1,Solenodon paradoxus,solenodon paradoxus
+Laurasiatheria,vs_sorAra2,vs_sorAra2,sorAra2,GCF_000181275.1,Sorex araneus,sorex araneus
+Laurasiatheria,vs_conCri1,vs_conCri1,conCri1,GCF_000260355.1,Condylura cristata,condylura cristata
+Laurasiatheria,vs_HLscaAqu1,vs_HLscaAqu1,HLscaAqu1,GCA_004024925.1,Scalopus aquaticus,scalopus aquaticus
+Laurasiatheria,vs_HLuroGra1,vs_HLuroGra1,HLuroGra1,GCA_004024945.1,Uropsilus gracilis,uropsilus gracilis
+Laurasiatheria,vs_HLequAsiAsi2,vs_HLequAsiAsi2,HLequAsiAsi2,GCA_003033725.1,Equus asinus asinus,equus asinus asinus
+Laurasiatheria,vs_equCab3,vs_equCab3,equCab3,GCF_002863925.1,Equus caballus,equus caballus
+Laurasiatheria,vs_equPrz1,vs_equPrz1,equPrz1,GCF_000696695.1,Equus przewalskii,equus przewalskii
+Laurasiatheria,vs_HLcerSimCot1,vs_HLcerSimCot1,HLcerSimCot1,GCA_004027795.1,Ceratotherium simum cottoni,ceratotherium simum cottoni
+Laurasiatheria,vs_cerSim1,vs_cerSim1,cerSim1,GCF_000283155.1,Ceratotherium simum simum,ceratotherium simum simum
+Laurasiatheria,vs_HLdicSum1,vs_HLdicSum1,HLdicSum1,GCA_002844835.1,Dicerorhinus sumatrensis sumatrensis,dicerorhinus sumatrensis sumatrensis
+Laurasiatheria,vs_HLdicBic1,vs_HLdicBic1,HLdicBic1,GCA_004027315.2,Diceros bicornis,diceros bicornis
+Laurasiatheria,vs_HLtapInd2,vs_HLtapInd2,HLtapInd2,DNA Zoo Consortium,Tapirus indicus,tapirus indicus
+Laurasiatheria,vs_HLtapTer1,vs_HLtapTer1,HLtapTer1,GCA_004025025.1,Tapirus terrestris,tapirus terrestris
+Laurasiatheria,vs_HLmanJav2,vs_HLmanJav2,HLmanJav2,GCA_014570535.1,Manis javanica,manis javanica
+Laurasiatheria,vs_HLmanPen2,vs_HLmanPen2,HLmanPen2,GCA_014570555.1,Manis pentadactyla,manis pentadactyla
+,,vs_HLacoRus1,HLacoRus1,GCA_903995435.1,Acomys russatus,acomys russatus
+,,vs_HLaeoCin1,HLaeoCin1,GCA_011751065.1,Aeorestes cinereus,aeorestes cinereus
+,,vs_HLaepMel1,HLaepMel1,GCA_006408695.1,Aepyceros melampus,aepyceros melampus
+,,vs_HLalcAlc1,HLalcAlc1,GCA_007570765.1,Alces alces,alces alces
+,,vs_HLallNig1,HLallNig1,DNA Zoo Consortium,Allenopithecus nigroviridis,allenopithecus nigroviridis
+,,vs_HLantFla1,HLantFla1,GCA_016432865.1,Antechinus flavipes,antidorcas marsupialis
+,,vs_HLantMar1,HLantMar1,GCA_006408585.1,Antidorcas marsupialis,antrozous pallidus
+,,vs_HLantPal1,HLantPal1,GCA_007922775.1,Antrozous pallidus,apodemus sylvaticus
+,,vs_HLapoSyl1,HLapoSyl1,GCA_001305905.1,Apodemus sylvaticus,arctocephalus gazella
+,,vs_HLarcGaz2,HLarcGaz2,GCA_900642305.1,Arctocephalus gazella,arvicanthis niloticus
+,,vs_HLartJam1,HLartJam1,GCA_004027435.1,Artibeus jamaicensis,arvicola amphibius
+,,vs_HLarvNil1,HLarvNil1,GCA_011762505.1,Arvicanthis niloticus,axis porcinus
+,,vs_HLarvAmp1,HLarvAmp1,GCA_903992535.1,Arvicola amphibius,balaena mysticetus
+,,vs_HLaxiPor1,HLaxiPor1,GCA_003798545.1,Axis porcinus,balaenoptera edeni
+,,vs_HLbalMys1,HLbalMys1,http://alfred.liv.ac.uk/downloads/bowhead_whale/bowhead_whale_scaffolds.zip,Balaena mysticetus,balaenoptera musculus
+,,vs_HLbalEde1,HLbalEde1,DNA Zoo Consortium,Balaenoptera edeni,balaenoptera physalus
+,,vs_HLbalMus1,HLbalMus1,GCA_009873245.1,Balaenoptera musculus,bassariscus sumichrasti
+,,vs_HLbalPhy1,HLbalPhy1,GCA_008795845.1,Balaenoptera physalus,bos frontalis
+,,vs_HLbasSum1,HLbasSum1,DNA Zoo Consortium,Bassariscus sumichrasti,bos gaurus
+,,vs_HLbosFro1,HLbosFro1,GCA_007844835.1,Bos frontalis,bos grunniens
+,,vs_HLbosGau1,HLbosGau1,GCA_014182915.1,Bos gaurus,callithrix pygmaea
+,,vs_HLbosGru1,HLbosGru1,GCA_005887515.2,Bos grunniens,callorhinus ursinus
+,,vs_HLcalPym1,HLcalPym1,DNA Zoo Consortium,Callithrix pygmaea,canis lupus dingo
+,,vs_HLcalUrs1,HLcalUrs1,GCF_003265705.1,Callorhinus ursinus,capra ibex
+,,vs_HLcanLupDin1,HLcanLupDin1,GCF_003254725.1,Canis lupus dingo,capra sibirica
+,,vs_canFam5,canFam5,GCA_005444595.1,Canis lupus familiaris,capreolus pygargus
+,,vs_HLcapIbe1,HLcapIbe1,GCA_006410555.1,Capra ibex,carlito syrichta
+,,vs_HLcapSib1,HLcapSib1,GCA_003182615.2,Capra sibirica,cephalophus harveyi
+,,vs_HLcapPyg1,HLcapPyg1,GCA_012922965.1,Capreolus pygargus,cercopithecus mona
+,,vs_tarSyr2,tarSyr2,GCF_000164805.1,Carlito syrichta,cervus elaphus hippelaphus
+,,vs_HLcepHar1,HLcepHar1,GCA_006410635.1,Cephalophus harveyi,cervus hanglu yarkandensis
+,,vs_HLcerMon1,HLcerMon1,GCA_014849445.1,Cercopithecus mona,choloepus didactylus
+,,vs_HLcerEla1,HLcerEla1,GCA_002197005.1,Cervus elaphus hippelaphus,choloepus hoffmanni
+,,vs_HLcerHanYar1,HLcerHanYar1,GCA_010411085.1,Cervus hanglu yarkandensis,chrysochloris asiatica
+,,vs_HLchoDid1,HLchoDid1,GCA_004027855.1,Choloepus didactylus,coendou prehensilis
+,,vs_HLchoDid2,HLchoDid2,GCF_015220235.1,Choloepus didactylus,connochaetes taurinus
+,,vs_HLchoHof3,HLchoHof3,DNA Zoo Consortium,Choloepus hoffmanni,crocuta crocuta
+,,vs_chrAsi1,chrAsi1,GCF_000296735.1,Chrysochloris asiatica,cynomys gunnisoni
+,,vs_HLcoePre1,HLcoePre1,DNA Zoo Consortium,Coendou prehensilis,cynopterus brachyotis
+,,vs_HLconTau2,HLconTau2,DNA Zoo Consortium,Connochaetes taurinus,damaliscus lunatus
+,,vs_HLcroCro1,HLcroCro1,GCA_008692635.1,Crocuta crocuta,dasypus novemcinctus
+,,vs_HLcynGun1,HLcynGun1,GCA_011316645.1,Cynomys gunnisoni,echinops telfairi
+,,vs_HLcynBra1,HLcynBra1,GCA_009793145.1,Cynopterus brachyotis,eidolon dupreanum
+,,vs_HLdamLun1,HLdamLun1,GCA_006408505.1,Damaliscus lunatus,elephantulus edwardii
+,,vs_dasNov3,dasNov3,GCF_000208655.1,Dasypus novemcinctus,elephas maximus
+,,vs_HLdidVir1,HLdidVir1,DNA Zoo Consortium,Didelphis virginiana,enhydra lutris kenyoni
+,,vs_HLdugDug1,HLdugDug1,GCA_015147995.1,Dugong dugon,enhydra lutris nereis
+,,vs_echTel2,echTel2,GCF_000313985.1,Echinops telfairi,eonycteris spelaea
+,,vs_HLeidDup1,HLeidDup1,DNA Zoo Consortium,Eidolon dupreanum,equus burchellii boehmi
+,,vs_eleEdw1,eleEdw1,GCF_000299155.1,Elephantulus edwardii,erethizon dorsatum
+,,vs_HLeleMax1,HLeleMax1,DNA Zoo Consortium,Elephas maximus,erignathus barbatus
+,,vs_enhLutKen1,enhLutKen1,GCF_002288905.1,Enhydra lutris kenyoni,eubalaena glacialis
+,,vs_enhLutNer1,enhLutNer1,GCA_006410715.1,Enhydra lutris nereis,eudorcas thomsonii
+,,vs_HLeonSpe1,HLeonSpe1,GCA_003508835.1,Eonycteris spelaea,eulemur macaco
+,,vs_HLequAsi1,HLequAsi1,GCF_001305755.1,Equus asinus,eulemur mongoz
+,,vs_HLequQuaBoe1,HLequQuaBoe1,DNA Zoo Consortium,Equus burchellii boehmi,eumetopias jubatus
+,,vs_HLereDor1,HLereDor1,GCA_006547115.1,Erethizon dorsatum,galeopterus variegatus
+,,vs_HLeriBar1,HLeriBar1,DNA Zoo Consortium,Erignathus barbatus,giraffa camelopardalis
+,,vs_HLeubGla1,HLeubGla1,DNA Zoo Consortium,Eubalaena glacialis,globicephala melas
+,,vs_HLeudTho1,HLeudTho1,GCA_006408755.1,Eudorcas thomsonii,grammomys surdaster
+,,vs_eulFla1,eulFla1,GCA_001262665.1,Eulemur flavifrons,gulo gulo
+,,vs_eulMac1,eulMac1,GCA_001262655.1,Eulemur macaco,halichoerus grypus
+,,vs_HLeulMon1,HLeulMon1,DNA Zoo Consortium,Eulemur mongoz,heterohyrax brucei
+,,vs_HLeumJub1,HLeumJub1,GCF_004028035.1,Eumetopias jubatus,hippopotamus amphibius
+,,vs_HLgalVar2,HLgalVar2,GCA_004027255.2,Galeopterus variegatus,hippotragus niger niger
+,,vs_HLgirCam1,HLgirCam1,GCA_006408565.1,Giraffa camelopardalis,hydropotes inermis
+,,vs_HLgirCam2,HLgirCam2,DNA Zoo Consortium,Giraffa camelopardalis,hylobates moloch
+,,vs_HLgloMel1,HLgloMel1,GCF_006547405.1,Globicephala melas,kobus ellipsiprymnus
+,,vs_HLgraAgi1,HLgraAgi1,GCA_016433145.1,Gracilinanus agilis,kobus leche leche
+,,vs_HLgraSur1,HLgraSur1,GCF_004785775.1,Grammomys surdaster,lagenorhynchus obliquidens
+,,vs_HLgulGul1,HLgulGul1,GCA_900006375.2,Gulo gulo,lama glama chaku
+,,vs_HLgymLea1,HLgymLea1,GCA_011680675.1,Gymnobelideus leadbeateri,lama guanicoe cacsilensis
+,,vs_HLhalGry1,HLhalGry1,GCA_012393455.1,Halichoerus grypus,leptonycteris yerbabuenae
+,,vs_HLhetBru1,HLhetBru1,GCA_004026845.1,Heterohyrax brucei,lepus timidus
+,,vs_HLhipAmp1,HLhipAmp1,GCA_002995585.1,Hippopotamus amphibius,litocranius walleri
+,,vs_HLhipAmp3,HLhipAmp3,GCA_004027065.2,Hippopotamus amphibius,lontra canadensis
+,,vs_HLhipEqu1,HLhipEqu1,GCA_016433095.1,Hippotragus equinus,loxodonta africana
+,,vs_HLhipNig1,HLhipNig1,GCA_006942125.1,Hippotragus niger niger,lutra lutra
+,,vs_HLhydGig1,HLhydGig1,GCA_013391785.1,Hydrodamalis gigas,lynx canadensis
+,,vs_HLhydIne1,HLhydIne1,GCA_006459105.1,Hydropotes inermis,lynx pardinus
+,,vs_HLhylMol2,HLhylMol2,GCF_009828535.2,Hylobates moloch,macaca fuscata
+,,vs_HLkobEll1,HLkobEll1,GCA_006410655.1,Kobus ellipsiprymnus,macrotus californicus
+,,vs_HLkobLecLec1,HLkobLecLec1,GCA_014926565.1,Kobus leche leche,madoqua kirkii
+,,vs_HLlagObl1,HLlagObl1,GCF_003676395.1,Lagenorhynchus obliquidens,mandrillus sphinx
+,,vs_HLlamGla1,HLlamGla1,DNA Zoo Consortium,Lama glama,manis tricuspis
+,,vs_HLlamGlaCha1,HLlamGlaCha1,GCA_013239585.1,Lama glama chaku,marmota flaviventris
+,,vs_HLlamGuaCac1,HLlamGuaCac1,GCA_013239625.1,Lama guanicoe cacsilensis,marmota himalayana
+,,vs_HLlepYer1,HLlepYer1,GIGADB,Leptonycteris yerbabuenae,marmota monax
+,,vs_HLlepTim1,HLlepTim1,GCA_009760805.1,Lepus timidus,marmota vancouverensis
+,,vs_HLlitWal1,HLlitWal1,GCA_006410535.1,Litocranius walleri,martes zibellina
+,,vs_HLlonCan1,HLlonCan1,GCF_010015895.1,Lontra canadensis,mastomys coucha
+,,vs_HLloxAfr4,HLloxAfr4,ftp://ftp.broadinstitute.org/pub/assemblies/mammals/elephant/loxAfr4/,Loxodonta africana,megaptera novaeangliae
+,,vs_HLlutLut1,HLlutLut1,GCA_902655055.1,Lutra lutra,microcebus tavaratra
+,,vs_HLlycPic2,HLlycPic2,GCA_004216515.1,Lycaon pictus,microgale talazaci
+,,vs_HLlynCan1,HLlynCan1,GCF_007474595.1,Lynx canadensis,microtus agrestis
+,,vs_HLlynPar1,HLlynPar1,GCA_900661375.1,Lynx pardinus,microtus arvalis
+,,vs_HLmacFus1,HLmacFus1,DNA Zoo Consortium,Macaca fuscata,microtus oeconomus
+,,vs_HLmacFul1,HLmacFul1,DNA Zoo Consortium,Macropus fuliginosus,mirounga leonina
+,,vs_HLmacGig1,HLmacGig1,DNA Zoo Consortium,Macropus giganteus,mirza zaza
+,,vs_HLmacCal1,HLmacCal1,GCA_007922815.1,Macrotus californicus,molossus molossus
+,,vs_HLmadKir1,HLmadKir1,GCA_006408675.1,Madoqua kirkii,moschus berezovskii
+,,vs_HLmanSph1,HLmanSph1,GCA_004802615.1,Mandrillus sphinx,moschus chrysogaster
+,,vs_HLmanJav1,HLmanJav1,GCF_001685135.1,Manis javanica,muntiacus crinifrons
+,,vs_manPen1,manPen1,GCA_000738955.1,Manis pentadactyla,muntiacus muntjak
+,,vs_HLmanTri1,HLmanTri1,GCA_004765945.1,Manis tricuspis,muntiacus reevesi
+,,vs_HLmarFla1,HLmarFla1,GCA_003676075.2,Marmota flaviventris,mus spicilegus
+,,vs_HLmarHim1,HLmarHim1,GCA_005280165.1,Marmota himalayana,mustela erminea
+,,vs_HLmarMon1,HLmarMon1,GCA_901343595.1,Marmota monax,mustela putorius
+,,vs_HLmarMon2,HLmarMon2,GCA_014533835.1,Marmota monax,myodes glareolus
+,,vs_HLmarVan1,HLmarVan1,GCA_005458795.1,Marmota vancouverensis,myotis septentrionalis
+,,vs_HLmarZib1,HLmarZib1,GCA_012583365.1,Martes zibellina,myrmecophaga tridactyla
+,,vs_HLmasCou1,HLmasCou1,GCF_008632895.1,Mastomys coucha,nanger granti
+,,vs_HLmegNov1,HLmegNov1,GCA_004329385.1,Megaptera novaeangliae,nasua narica
+,,vs_HLmicSpe31,HLmicSpe31,GCA_008750915.1,Microcebus sp. 3 GT-2019,neofelis nebulosa
+,,vs_HLmicTav1,HLmicTav1,GCA_008750935.1,Microcebus tavaratra,neotoma lepida
+,,vs_HLmicTal1,HLmicTal1,GCA_004026705.1,Microgale talazaci,neotragus moschatus
+,,vs_HLmicAgr2,HLmicAgr2,GCA_902806775.1,Microtus agrestis,neotragus pygmaeus
+,,vs_HLmicArv1,HLmicArv1,GCA_007455615.1,Microtus arvalis,neovison vison
+,,vs_HLmicFor1,HLmicFor1,GCA_014885135.1,Microtus fortis,nycticeius humeralis
+,,vs_HLmicOec1,HLmicOec1,GCA_007455595.1,Microtus oeconomus,odobenus rosmarus divergens
+,,vs_HLmirLeo1,HLmirLeo1,GCF_011800145.1,Mirounga leonina,odocoileus hemionus hemionus
+,,vs_HLmirZaz1,HLmirZaz1,GCA_008750895.1,Mirza zaza,odocoileus virginianus texanus
+,,vs_HLmolMol2,HLmolMol2,Bat1K,Molossus molossus,oreamnos americanus
+,,vs_monDom5,monDom5,GCF_000002295.2,Monodelphis domestica,oreotragus oreotragus
+,,vs_HLmonMon1,HLmonMon1,GCF_005190385.1,Monodon monoceros,orycteropus afer afer
+,,vs_HLmosBer1,HLmosBer1,GCA_006459085.1,Moschus berezovskii,oryx dammah
+,,vs_HLmosChr1,HLmosChr1,GCA_006461725.1,Moschus chrysogaster,oryx gazella
+,,vs_HLmunCri1,HLmunCri1,GCA_006408485.1,Muntiacus crinifrons,ovis ammon
+,,vs_HLmunMun1,HLmunMun1,GCA_008782695.1,Muntiacus muntjak,ovis orientalis
+,,vs_HLmunRee1,HLmunRee1,GCA_008787405.1,Muntiacus reevesi,panthera leo
+,,vs_mm10,mm10,GCF_000001635.20,Mus musculus,pedetes capensis
+,,vs_HLmusSpi1,HLmusSpi1,GCA_003336285.1,Mus spicilegus,peponocephala electra
+,,vs_HLmusErm1,HLmusErm1,GCF_009829155.1,Mustela erminea,peromyscus californicus insignis
+,,vs_HLmusPut1,HLmusPut1,GCA_902460205.1,Mustela putorius,peromyscus crinitus
+,,vs_HLmyoGla2,HLmyoGla2,GCA_902806735.1,Myodes glareolus,peromyscus eremicus
+,,vs_myoLuc2,myoLuc2,GCF_000147115.1,Myotis lucifugus,peromyscus leucopus
+,,vs_HLmyoSep1,HLmyoSep1,DNA Zoo Consortium,Myotis septentrionalis,peromyscus nasutus
+,,vs_HLmyrTri1,HLmyrTri1,GCA_004026745.1,Myrmecophaga tridactyla,peromyscus polionotus subgriseus
+,,vs_HLnanGra1,HLnanGra1,GCA_006408635.1,Nanger granti,phataginus tricuspis
+,,vs_HLnasNar1,HLnasNar1,DNA Zoo Consortium,Nasua narica,philantomba maxwellii
+,,vs_HLneoNeb1,HLneoNeb1,DNA Zoo Consortium,Neofelis nebulosa,phoca vitulina
+,,vs_HLneoLep1,HLneoLep1,GCA_001675575.1,Neotoma lepida,phocoena sinus
+,,vs_HLneoMos1,HLneoMos1,GCA_006410615.1,Neotragus moschatus,phyllostomus discolor
+,,vs_HLneoPyg1,HLneoPyg1,GCA_006410875.1,Neotragus pygmaeus,physeter catodon
+,,vs_HLneoVis1,HLneoVis1,GCA_900108605.1,Neovison vison,pipistrellus kuhlii
+,,vs_HLnotEug3,HLnotEug3,DNA Zoo Consortium,Notamacropus eugenii,platanista minor
+,,vs_macEug2,macEug2,GCA_000004035.1,Notamacropus eugenii,plecturocebus donacophilus
+,,vs_HLnycHum2,HLnycHum2,GCA_007922795.1,Nycticeius humeralis,potos flavus
+,,vs_odoRosDiv1,odoRosDiv1,GCF_000321225.1,Odobenus rosmarus divergens,prionailurus bengalensis euptilurus
+,,vs_HLodoHem1,HLodoHem1,GCA_004115125.1,Odocoileus hemionus hemionus,procapra przewalskii
+,,vs_HLodoVir2,HLodoVir2,DNA Zoo Consortium,Odocoileus virginianus,procavia capensis
+,,vs_HLodoVir1,HLodoVir1,GCF_002102435.1,Odocoileus virginianus texanus,procyon lotor
+,,vs_HLoreAme1,HLoreAme1,GCA_009758055.1,Oreamnos americanus,prolemur simus
+,,vs_HLoreOre1,HLoreOre1,GCA_006410675.1,Oreotragus oreotragus,przewalskium albirostris
+,,vs_HLornAna3,HLornAna3,GCA_004115215.1,Ornithorhynchus anatinus,pteropus giganteus
+,,vs_oryAfe1,oryAfe1,GCF_000298275.1,Orycteropus afer afer,pteropus pselaphon
+,,vs_HLoryCun3,HLoryCun3,GCA_009806435.1,Oryctolagus cuniculus,pteropus rufus
+,,vs_oryCun2,oryCun2,GCF_000003625.2,Oryctolagus cuniculus,puma yagouaroundi
+,,vs_HLoryDam1,HLoryDam1,DNA Zoo Consortium,Oryx dammah,rangifer tarandus granti
+,,vs_HLoryGaz1,HLoryGaz1,GCA_003945745.1,Oryx gazella,raphicerus campestris
+,,vs_HLospRuf1,HLospRuf1,DNA Zoo Consortium,Osphranter rufus,rattus rattus
+,,vs_HLoviAmm1,HLoviAmm1,GCA_003121645.1,Ovis ammon,redunca redunca
+,,vs_HLoviCan1,HLoviCan1,GCA_001039535.1,Ovis canadensis canadensis,rhinoceros unicornis
+,,vs_HLoviNivLyd1,HLoviNivLyd1,GCA_903231385.1,Ovis nivicola lydekkeri,rhinolophus ferrumequinum
+,,vs_HLoviOri1,HLoviOri1,GCA_014523465.1,Ovis orientalis,rhizomys pruinosus
+,,vs_HLpanLeo1,HLpanLeo1,GCA_008795835.1,Panthera leo,rhombomys opimus
+,,vs_HLpanOnc1,HLpanOnc1,GCA_004023805.1,Panthera onca,rousettus madagascariensis
+,,vs_HLpedCap1,HLpedCap1,GCA_007922755.1,Pedetes capensis,sapajus apella
+,,vs_HLpepEle1,HLpepEle1,DNA Zoo Consortium,Peponocephala electra,sciurus carolinensis
+,,vs_HLperCal2,HLperCal2,GCA_007827085.2,Peromyscus californicus insignis,sciurus vulgaris
+,,vs_HLperCri1,HLperCri1,DNA Zoo Consortium,Peromyscus crinitus,sousa chinensis
+,,vs_HLperEre1,HLperEre1,GCA_902702925.1,Peromyscus eremicus,sturnira hondurensis
+,,vs_HLperLeu1,HLperLeu1,GCF_004664715.1,Peromyscus leucopus,sylvicapra grimmia
+,,vs_HLperNas1,HLperNas1,DNA Zoo Consortium,Peromyscus nasutus,sylvilagus bachmani
+,,vs_HLperPol1,HLperPol1,GCA_003704135.2,Peromyscus polionotus subgriseus,syncerus caffer
+,,vs_HLphaGym1,HLphaGym1,DNA Zoo Consortium,Phalanger gymnotis,talpa occidentalis
+,,vs_HLphaCin1,HLphaCin1,GCF_002099425.1,Phascolarctos cinereus,tamandua tetradactyla
+,,vs_HLphaTri2,HLphaTri2,DNA Zoo Consortium,Phataginus tricuspis,taxidea taxus jeffersonii
+,,vs_HLphiMax1,HLphiMax1,GCA_006410695.1,Philantomba maxwellii,theropithecus gelada
+,,vs_HLphoVit1,HLphoVit1,GCF_004348235.1,Phoca vitulina,tolypeutes matacus
+,,vs_HLphoPho1,HLphoPho1,GCA_004363495.1,Phocoena phocoena,trachypithecus francoisi
+,,vs_HLphoSin1,HLphoSin1,GCF_008692025.1,Phocoena sinus,tragelaphus imberbis
+,,vs_HLphyDis3,HLphyDis3,Bat1K,Phyllostomus discolor,tragelaphus scriptus
+,,vs_HLphyCat2,HLphyCat2,GCF_002837175.2,Physeter catodon,tragelaphus strepsiceros
+,,vs_phyCat1,phyCat1,GCF_000472045.1,Physeter catodon,tragulus kanchil
+,,vs_HLpipKuh2,HLpipKuh2,Bat1K,Pipistrellus kuhlii,trichechus manatus latirostris
+,,vs_HLpipPip1,HLpipPip1,GCA_004026625.1,Pipistrellus pipistrellus,tupaia belangeri
+,,vs_HLplaMin1,HLplaMin1,GCA_004363435.1,Platanista minor,tursiops aduncus
+,,vs_HLpleDon1,HLpleDon1,GCA_004027715.1,Plecturocebus donacophilus,urocitellus parryii
+,,vs_HLponBla1,HLponBla1,GCA_011754075.1,Pontoporia blainvillei,ursus americanus
+,,vs_HLpotFla1,HLpotFla1,DNA Zoo Consortium,Potos flavus,ursus arctos horribilis
+,,vs_HLpriBen1,HLpriBen1,GCA_005406085.1,Prionailurus bengalensis euptilurus,ursus thibetanus thibetanus
+,,vs_HLproPrz1,HLproPrz1,GCA_006410515.1,Procapra przewalskii,vicugna pacos huacaya
+,,vs_HLproCap3,HLproCap3,GCA_004026925.2,Procavia capensis,vulpes vulpes
+,,vs_HLproLot1,HLproLot1,DNA Zoo Consortium,Procyon lotor,canis lupus lupus
+,,vs_HLproSim1,HLproSim1,GCA_003258685.1,Prolemur simus,
+,,vs_HLprzAlb1,HLprzAlb1,GCA_006408465.1,Przewalskium albirostris,
+,,vs_HLpseOcc1,HLpseOcc1,DNA Zoo Consortium,Pseudocheirus occidentalis,
+,,vs_HLpseCor1,HLpseCor1,DNA Zoo Consortium,Pseudochirops corinnae,
+,,vs_HLpseCup1,HLpseCup1,DNA Zoo Consortium,Pseudochirops cupreus,
+,,vs_HLpteBra1,HLpteBra1,GCA_004024605.1,Pteronura brasiliensis,
+,,vs_HLpteGig1,HLpteGig1,GCA_902729225.1,Pteropus giganteus,
+,,vs_HLptePse1,HLptePse1,GCA_014363405.1,Pteropus pselaphon,
+,,vs_HLpteRuf1,HLpteRuf1,DNA Zoo Consortium,Pteropus rufus,
+,,vs_HLpumYag1,HLpumYag1,GCA_014898765.1,Puma yagouaroundi,
+,,vs_HLranTarGra2,HLranTarGra2,GCA_014898785.1,Rangifer tarandus granti,
+,,vs_HLrapCam1,HLrapCam1,GCA_006410735.1,Raphicerus campestris,
+,,vs_rn6,rn6,GCF_000001895.5,Rattus norvegicus,
+,,vs_HLratRat7,HLratRat7,GCF_011064425.1,Rattus rattus,
+,,vs_HLredRed1,HLredRed1,GCA_006410935.1,Redunca redunca,
+,,vs_HLrhiUni1,HLrhiUni1,DNA Zoo Consortium,Rhinoceros unicornis,
+,,vs_HLrhiFer5,HLrhiFer5,Bat1K,Rhinolophus ferrumequinum,
+,,vs_HLrhiPru1,HLrhiPru1,GCA_009823505.1,Rhizomys pruinosus,
+,,vs_HLrhoOpi1,HLrhoOpi1,GCA_010120015.1,Rhombomys opimus,
+,,vs_HLrouLes1,HLrouLes1,GCA_015472975.1,Rousettus leschenaultii,
+,,vs_HLrouMad1,HLrouMad1,DNA Zoo Consortium,Rousettus madagascariensis,
+,,vs_saiBol1,saiBol1,GCF_000235385.1,Saimiri boliviensis boliviensis,
+,,vs_HLsapApe1,HLsapApe1,GCF_009761245.1,Sapajus apella,
+,,vs_HLsarHar2,HLsarHar2,GCF_902635505.1,Sarcophilus harrisii,
+,,vs_HLsciCar1,HLsciCar1,GCA_902686445.1,Sciurus carolinensis,
+,,vs_HLsciVul1,HLsciVul1,GCA_902686455.1,Sciurus vulgaris,
+,,vs_HLsouChi1,HLsouChi1,GCA_007760645.1,Sousa chinensis,
+,,vs_HLstuHon1,HLstuHon1,GCA_014824575.1,Sturnira hondurensis,
+,,vs_HLsurSur2,HLsurSur2,GCA_004023905.1,Suricata suricatta,
+,,vs_HLsylGri1,HLsylGri1,GCA_006408735.1,Sylvicapra grimmia,
+,,vs_HLsylBac1,HLsylBac1,DNA Zoo Consortium,Sylvilagus bachmani,
+,,vs_HLsynCaf1,HLsynCaf1,GCA_902500845.1,Syncerus caffer,
+,,vs_HLtacAcu1,HLtacAcu1,GCA_015852505.1,Tachyglossus aculeatus,
+,,vs_HLtalOcc1,HLtalOcc1,GCA_014898055.1,Talpa occidentalis,
+,,vs_HLtamTet1,HLtamTet1,GCA_004025105.1,Tamandua tetradactyla,
+,,vs_HLtapInd1,HLtapInd1,GCA_004024905.1,Tapirus indicus,
+,,vs_HLtaxTax1,HLtaxTax1,GCA_003697995.1,Taxidea taxus jeffersonii,
+,,vs_HLtheGel1,HLtheGel1,GCF_003255815.1,Theropithecus gelada,
+,,vs_HLthyCyn1,HLthyCyn1,GCA_007646695.1,Thylacinus cynocephalus,
+,,vs_HLtolMat1,HLtolMat1,GCA_004025125.1,Tolypeutes matacus,
+,,vs_HLtraFra1,HLtraFra1,GCF_009764315.1,Trachypithecus francoisi,
+,,vs_HLtraImb1,HLtraImb1,GCA_006410775.1,Tragelaphus imberbis,
+,,vs_HLtraScr1,HLtraScr1,GCA_006410495.1,Tragelaphus scriptus,
+,,vs_HLtraStr1,HLtraStr1,GCA_006410795.1,Tragelaphus strepsiceros,
+,,vs_HLtraKan1,HLtraKan1,GCA_006408655.1,Tragulus kanchil,
+,,vs_triMan1,triMan1,GCF_000243295.1,Trichechus manatus latirostris,
+,,vs_HLtriVul1,HLtriVul1,GCA_011100635.1,Trichosurus vulpecula,
+,,vs_tupBel1,tupBel1,GCA_000181375.1,Tupaia belangeri,
+,,vs_HLturAdu1,HLturAdu1,GCA_003227395.1,Tursiops aduncus,
+,,vs_HLturAdu2,HLturAdu2,DNA Zoo Consortium,Tursiops aduncus,
+,,vs_HLturTru3,HLturTru3,GCF_001922835.1,Tursiops truncatus,
+,,vs_turTru2,turTru2,GCF_000151865.1,Tursiops truncatus,
+,,vs_HLuroPar1,HLuroPar1,GCF_003426925.1,Urocitellus parryii,
+,,vs_HLursAme1,HLursAme1,GCA_003344425.1,Ursus americanus,
+,,vs_HLursAme2,HLursAme2,DNA Zoo Consortium,Ursus americanus,
+,,vs_HLursArc1,HLursArc1,GCF_003584765.1,Ursus arctos horribilis,
+,,vs_HLursThi1,HLursThi1,GCA_009660055.1,Ursus thibetanus thibetanus,
+,,vs_HLvicPacHua3,HLvicPacHua3,GCA_000767525.1,Vicugna pacos huacaya,
+,,vs_HLvicVicMen1,HLvicVicMen1,GCA_013265495.1,Vicugna vicugna mensalis,
+,,vs_HLvomUrs1,HLvomUrs1,GCF_900497805.2,Vombatus ursinus,
+,,vs_HLvulVul1,HLvulVul1,GCF_003160815.1,Vulpes vulpes,
