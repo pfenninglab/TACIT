@@ -162,7 +162,7 @@ Step 3: For mapping OCR orthologs across species, we used halLiftover (https://g
 ## Contact
 Irene Kaplow (ikaplow@cs.cmu.edu)
 
-Daniel Schaffer (dschaffe@andrew.cmu.edu)
+Daniel Schaffer (dschaffe@mit.edu)
 
 Alyssa Lawler (alawler@andrew.cmu.edu)
 
