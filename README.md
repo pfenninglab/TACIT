@@ -12,9 +12,9 @@ This pipeline has been tested on Centos versions 7 and 8. However, we expect it 
 3. Run `ocr_phylo(g)lm_conditional.r` (described below) on the output from `permulationList.py`.
 4. Run `compute_perm_pvals_conditional.py` (described below) on the output from `ocr_phylo(g)lm_conditional.r`.
 5. Run `permulationList.py` on the output from `compute_perm_pvals_conditional.py` with threshold 0.05 and --permulation 9000.
-6. If OCRs remain, repeat steps 3-5, using threshold 0.005 and --permulation 90000 in step 5.
-7. If OCRs remain, repeat steps 3-5, using threshold 0.0005 and --permulation 900000 in step 5.
-8. If OCRs remain, repeat steps 3-4.
+6. If OCRs remain, repeat steps 3-5, using threshold 0.005 and --permulation 90000 in step 5 with the same output directory but a different output template file name in step 3.
+7. If OCRs remain, repeat steps 3-5, using threshold 0.0005 and --permulation 900000 in step 5 with the same output directory but a different output template file name in step 3.
+8. If OCRs remain, repeat steps 3-4 with the same output directory but a different output template file name in step 3.
 9. Run `bhCorrection.R` (described below) on the output from `compute_perm_pvals_conditional.py`.
 
 
@@ -26,7 +26,7 @@ _Input arguments (must be provided in order)_:
 2. open chromatin predictions matrix file (text file, rows are OCRs, columns are species no header, first column is OCR names, tab-seperated, missing data is noted as -1; examples can be found at http://daphne.compbio.cs.cmu.edu/files/ikaplow/TACITSupplement/PredictionMatrices/)
 3. file listing species corresponding to predictions matrix columns (text file, one per line, in the format Genus species)
 4. phenotype file (csv file with column name headers, species names in a column called "species binomial" in the format genus_species for `ocr_phylolm.r` and  "Species Name" in the format Genus species for `ocr_phyloglm.r`)
-5. output file name "template," which includes a directory followed by a csv file name; output files will be the file name without the csv followed by the output file number and the random seed (example: if output file "template" given is /path/to/foo.csv, output will be in (I,S as below) /path/to/foo_rI_S.csv)
+5. output file name "template," which includes a directory followed by a csv file name; output files will be the file name without the csv followed by the output file number and the random seed (example: if output file "template" given is /path/to/foo.csv, output will be in (I,S as below) /path/to/foo_rI_S.csv); if you are running permulations multiple times for the same OCRs, phenotype annotations combination that will be combined, use the same output directory and different template file names each time
 6. I: output file number and inital line in predictions matrix
 7. J: step size in predictions matrix (see below),
 8. K: number of permulations per OCR (0 for true data / no permulations, make > 0 only if not using additional rejection sampler for accepting only permulations that preserve the direction from phylolm/phyloglm as described below; will apply phylolm to K permulations for OCRs on lines I, I+J, I+2J, ... until end of matrix is reached)
