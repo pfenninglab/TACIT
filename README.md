@@ -39,6 +39,8 @@ Example (submitted to slurm cluster in sbatch script): Rscript ocr_phylolm.r Zoo
                   
 `ocr_phylolm_conditional.r` and `ocr_phyloglm_conditional.r`: Conditional-test versions of the above scripts. Both have an additrional rejection sampler that only accepts permulations that associate with activity predictions in the same direction as the true phenotype. Instead of a fixed number of trials, both expect as input an CSV containing the original (unpermulated) coefficient and the number of trials to perform for each OCR. The specification for this input file matches the output of the conditional scripts for computing p-values, described below.
 
+*Note: In August 2026, we fixed an issue regarding species ordering in the permulation of continuous phenotypes. Please make sure to use the latest version of the phylolm scripts for permulations. Thanks to Deshan Perera for alerting us to an issue in this version of the code.*
+
 _Input arguments (must be provided in order)_:
 1. tree file (Newick file)
 2. open chromatin predictions matrix file (text file, rows are OCRs, columns are species no header, first column is OCR names, tab-seperated, missing data is noted as -1; examples can be found at http://daphne.compbio.cs.cmu.edu/files/ikaplow/TACITSupplement/PredictionMatrices/)

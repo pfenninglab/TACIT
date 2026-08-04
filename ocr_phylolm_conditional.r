@@ -158,6 +158,7 @@ for (i in 0:max_iter) {
     for (f in 1:num_shuffles){ 
       repeat {
         Y = simpermvec(int.trait.real, int.tree.di, rm=rate.matrix)
+        Y = Y[int.species] #Added - reorder based on input species order
       	dat = data.frame(X = X, Y = Y)
         m = phylolm(Y ~ X, data = dat, phy=int.tree.di, model = "BM")
         m.coeff = summary(m)$coefficients

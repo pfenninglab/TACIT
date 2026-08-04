@@ -165,7 +165,8 @@ for (i in 0:max_iter) {
   
     for (f in 1:num_shuffles) {
       if (random) {
-        int.trait[,1] = simpermvec(int.traitForShuf.real, int.tree.di, rm=rate.matrix)
+        perm.trait = simpermvec(int.traitForShuf.real, int.tree.di, rm=rate.matrix)
+        int.trait[,1] = perm.trait[int.species] #Added - reorder based on input species order
       }
       X = int.preds
       Y = int.trait[,1]
