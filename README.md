@@ -39,7 +39,7 @@ Example (submitted to slurm cluster in sbatch script): Rscript ocr_phylolm.r Zoo
                   
 `ocr_phylolm_conditional.r` and `ocr_phyloglm_conditional.r`: Conditional-test versions of the above scripts. Both have an additrional rejection sampler that only accepts permulations that associate with activity predictions in the same direction as the true phenotype. Instead of a fixed number of trials, both expect as input an CSV containing the original (unpermulated) coefficient and the number of trials to perform for each OCR. The specification for this input file matches the output of the conditional scripts for computing p-values, described below.
 
-*Note: In August 2026, we fixed an issue regarding species ordering in the permulation of continuous phenotypes. Please make sure to use the latest version of the phylolm scripts for permulations. Thanks to Deshan Perera for alerting us to an issue in this version of the code.*
+*Important note: We would like to thank Dr. Deshan Perera and Dr. Erin Gilbertson for pointing out a subtle error in our original modification to the continuous permulations code that meant that our code before version 0.1.6 (August 2026) was closer to a permutation test than proper phylogenetic permulations.  We have tested Deshan Perera’s fix and incorporated it into our code.  After incorporating this fix, we re-ran everything involving continuous permulations in our previous work and found that the impact on the results was minor.  However, the importance of phylogenetic permulations depends on the phenotype tree structure, and we have more recently found that running proper phylogenetic permulations can filter out results that are less biologically relevant for other phenotypes.  Therefore, if you are running continuous permulations, we recommend using version 0.1.6 (September 2026).  If you have any specific questions about this, please contact us (See Contact below.).*
 
 _Input arguments (must be provided in order)_:
 1. tree file (Newick file)
@@ -167,12 +167,6 @@ Irene Kaplow (ikaplow@cs.cmu.edu)
 Daniel Schaffer (dschaffe@mit.edu)
 
 Alyssa Lawler (alawler@andrew.cmu.edu)
-
-Heather Sestili (hharper@cmu.edu)
-
-Chaitanya Srinivasan (csriniv1@andrew.cmu.edu)
-
-Tianyu Lu (tianyul3@andrew.cmu.edu)
 
 Andreas Pfenning (apfenning@cmu.edu)
 
